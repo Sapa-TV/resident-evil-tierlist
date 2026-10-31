@@ -7,7 +7,7 @@ out_dir = os.path.join(root, "public", "games")
 os.makedirs(out_dir, exist_ok=True)
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) tierlist-assets/1.0"}
-MAX_W = 480
+CANVAS = "480x640"
 
 
 def api(params):
@@ -32,8 +32,9 @@ def find_image(candidates):
 
 def to_jpeg(src, dest):
     subprocess.run(
-        ["magick", src, "-resize", str(MAX_W) + "x>", "-auto-orient",
-         "-background", "#101014", "-flatten", "-quality", "85", dest],
+        ["magick", src, "-resize", CANVAS + ">", "-auto-orient",
+         "-background", "#101014", "-flatten",
+         "-gravity", "center", "-extent", CANVAS, "-quality", "85", dest],
         check=True,
     )
 
