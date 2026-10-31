@@ -1,0 +1,124 @@
+{
+ "games": [
+  {
+   "id": "re0",
+   "code": "RE0",
+   "name": "Resident Evil Zero",
+   "short": "RE Zero",
+   "year": 2002,
+   "platforms": "GameCube, PC, PS4, Switch, Xbox One",
+   "fandom": ["Resident Evil Zero"],
+   "description": "Приквел оригинала: rookies С.T.A.R.S. Ребекка Чемберс и беглый заключённый Билли Коэн расследуют дело об уничтоженном отряде Bravo в тренировочном центре «Умбеллы» и особняке под Раккун-Сити. Впервые в серии — управление двумя персонажами одновременно и отказ от инвентарных сундуков."
+  },
+  {
+   "id": "re1",
+   "code": "RE1",
+   "name": "Resident Evil",
+   "short": "RE 1",
+   "year": 1996,
+   "platforms": "PlayStation, PC, Saturn; ремейк 2002 — GameCube, PC, PS4, Switch, Xbox One",
+   "fandom": ["Resident Evil (2002 game)", "Resident Evil (1996 game)"],
+   "description": "Тот, с которого всё началось: отряд S.T.A.R.S. заперт в особняке Спенсера среди зомби и результатов экспериментов корпорации «Умбрелла». Родоначальник жанра survival horror и слово «зомби» в массовом сознании."
+  },
+  {
+   "id": "re2",
+   "code": "RE2",
+   "name": "Resident Evil 2",
+   "short": "RE 2",
+   "year": 1998,
+   "platforms": "PlayStation, PC, N64, Dreamcast; ремейк 2019 — PC, PS4, PS5, Xbox One",
+   "fandom": ["Resident Evil 2"],
+   "description": "Вышедший из-под контроля вирус Т превращает Раккун-Сити в город мёртвых. Новичок-полицейский Леон Кеннеди и Клэр Редфилд ищут спасение в участке и лабораториях «Умбеллы» под присмотром неубиваемого Тирана — а кампания проходит дважды: за Леона и за Клэр."
+  },
+  {
+   "id": "re3",
+   "code": "RE3",
+   "name": "Resident Evil 3: Nemesis",
+   "short": "RE 3",
+   "year": 1999,
+   "platforms": "PlayStation, PC, Dreamcast; ремейк 2020 — PC, PS4, Xbox One",
+   "fandom": ["Resident Evil 3 (2020 game)", "Resident Evil 3: Nemesis"],
+   "description": "Побег Джилл Валентайн из Раккун-Сити за считанные часы до ракетного удара по городу. Её по пятам преследует Немезис — биооружие, которое знает её в лицо, и от которого нельзя просто спрятаться в соседней комнате."
+  },
+  {
+   "id": "re4",
+   "code": "RE4",
+   "name": "Resident Evil 4",
+   "short": "RE 4",
+   "year": 2005,
+   "platforms": "GameCube, PS2, Wii, PC, PS4, PS5, Xbox One, VR",
+   "fandom": ["Resident Evil 4"],
+   "description": "Леон Кеннеди отправляется в испанскую глубинку спасать похищенную дочь президента и находит там одержимых лос Ганадос, секту «Лос Иллюминадос» и лучшие в серии перестрелки. Сменил страх на драйв и переопределил экшен-игры на десятилетие вперёд."
+  },
+  {
+   "id": "re5",
+   "code": "RE5",
+   "name": "Resident Evil 5",
+   "short": "RE 5",
+   "year": 2009,
+   "platforms": "PS3, Xbox 360, PC, PS4, Xbox One, Switch",
+   "fandom": ["Resident Evil 5"],
+   "description": "Крис Редфилд и Шева Аломар мешают сделке с биооружием в Африке и сходятся с альма-матер всех злодеев серии — Альбертом Вескером. Крупная веха кооператива: весь сюжет рассчитан на пару напарников."
+  },
+  {
+   "id": "re6",
+   "code": "RE6",
+   "name": "Resident Evil 6",
+   "short": "RE 6",
+   "year": 2012,
+   "platforms": "PS3, Xbox 360, PC, PS4, Xbox One, Switch",
+   "fandom": ["Resident Evil 6"],
+   "description": "Глобальная катастрофа в четырёх кампаниях: Леон с Хеленой, Крис с Пирсом, Джейк с Шерри и Ада сами по себе, пока пути не сплетаются в финале. Самый масштабный и самый спорный номерной выпуск серии — голливудский блокбастер вместо хоррора."
+  },
+  {
+   "id": "re7",
+   "code": "RE7",
+   "name": "Resident Evil 7: Biohazard",
+   "short": "RE 7",
+   "year": 2017,
+   "platforms": "PC, PS4, Xbox One, Switch (Cloud), VR",
+   "fandom": ["Resident Evil 7: Biohazard"],
+   "description": "Итан Уинтерс ищет пропавшую жену в заброшенной усадьбе семейства Бейкеров в Луизиане. Курс на истоки: вид от первого лица, изолированный дом, никакой техники — чистый ужас, вернувший серии доверие фанатов."
+  },
+  {
+   "id": "re8",
+   "code": "RE8",
+   "name": "Resident Evil Village",
+   "short": "RE Village",
+   "year": 2021,
+   "platforms": "PC, PS4, PS5, Xbox One, Xbox Series X/S, Switch (Cloud)",
+   "fandom": ["Resident Evil Village", "Resident Evil 8"],
+   "description": "Итан снова в поисках похищенной дочери — теперь в таинственной европейской деревне под властью Матери Миранды и её лордов, включая леди Димитреску ростом под три метра. Хоррор, перемешанный с оборотнями, оккультизмом и экшеном."
+  },
+  {
+   "id": "re9",
+   "code": "RE9",
+   "name": "Resident Evil Requiem",
+   "short": "RE Requiem",
+   "year": 2026,
+   "platforms": "PC, PS5, Xbox Series X/S, Switch 2",
+   "fandom": ["Resident Evil Requiem", "Resident Evil 9"],
+   "description": "Девятый номерной выпуск: аналитик ФБР Грейс Эшкрофт, дочь выжившей из Outbreak Алиссы Эшкрофт, расследует смерти сотрудников агентства в отеле у руин Раккун-Сити. Серия возвращается к выживанию и расследованию — со сменой места действия от мёртвого города к острову и знакомыми лицами в дуэте."
+  },
+  {
+   "id": "revelations",
+   "code": "REV1",
+   "name": "Resident Evil: Revelations",
+   "short": "Revelations",
+   "year": 2012,
+   "platforms": "3DS; порт — PS3, Xbox 360, PC, Wii U, PS4, Xbox One, Switch",
+   "fandom": ["Resident Evil: Revelations"],
+   "description": "Джилл Валентайн и Паркер Лучани высаживаются на списанный круизный лайнер «Королева Зенобия» в поисках Криса Редфилда. Классический формат survival horror, вернувшийся между RE5 и RE6, плюс фирменный сканер Генезис вместо полноценной карты."
+  },
+  {
+   "id": "revelations-2",
+   "code": "REV2",
+   "name": "Resident Evil: Revelations 2",
+   "short": "Revelations 2",
+   "year": 2015,
+   "platforms": "PC, PS3, PS4, Xbox 360, Xbox One, Switch, Vita",
+   "fandom": ["Resident Evil: Revelations 2"],
+   "description": "Клэр Редфилд и Мойра Бёртон приходят в себя в тюрьме на острове Севера, а параллельно Барри Бёртон ищет пропавшую дочь вместе с загадочной девочкой Наталией. Эпизодический релиз с монстром-надзирателем, который чует страх и становится сильнее, когда жертва паникует."
+  }
+ ]
+}

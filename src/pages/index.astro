@@ -1,5 +1,7 @@
 ---
 import "../styles/tierlist.css";
+
+const BASE = import.meta.env.BASE_URL;
 ---
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,6 +14,10 @@ import "../styles/tierlist.css";
 </head>
 <body>
   <header>
+    <nav class="site-nav">
+      <a class="active" href={BASE}>Персонажи</a>
+      <a href={BASE + "games/"}>Игры</a>
+    </nav>
     <h1>RESIDENT <span>EVIL</span> — ТИР-ЛИСТ</h1>
     <input id="search" type="text" placeholder="Поиск персонажа…" />
     <button id="reset">Сбросить</button>

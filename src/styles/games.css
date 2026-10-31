@@ -1,0 +1,28 @@
+body.games {
+  --card: 96px;
+}
+
+.games .card { height: auto; }
+.games .card img { height: auto; aspect-ratio: 3/4; }
+
+.games #lb-media { flex-basis: 300px; }
+.games #lb-img { aspect-ratio: 3/4; object-fit: contain; }
+
+.games #lb-meta span,
+.games #lb-chars span {
+  display: inline-block; margin: 0 4px 4px 0; padding: 2px 7px;
+  background: #26262e; border: 1px solid var(--line); border-radius: 6px;
+  font-size: 11.5px; color: var(--dim);
+}
+.games #lb-meta { margin-top: 8px; }
+.games #lb-desc { margin: 10px 0 4px; font-size: 13.5px; line-height: 1.45; }
+.games #lb-chars { margin-top: 10px; }
+.games #lb-chars::before {
+  content: "Персонажи в игре";
+  display: block; font-size: 11px; text-transform: uppercase;
+  letter-spacing: 1px; color: var(--dim); margin-bottom: 6px;
+}
+
+@media (max-width: 640px) {
+  .games #lb-media { flex: none; max-width: 300px; margin: 0 auto; }
+}
