@@ -1,0 +1,1520 @@
+{
+ "games": [
+  "RE0",
+  "RE1",
+  "RE2",
+  "RE3",
+  "RE4",
+  "RE5",
+  "RE6",
+  "RE7",
+  "RE8",
+  "RE9",
+  "REV1",
+  "REV2"
+ ],
+ "characters": [
+  {
+   "id": "rebecca-chambers",
+   "name": "Rebecca Chambers",
+   "games": [
+    "RE0",
+    "RE1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Rebecca Chambers"
+   ],
+   "attacks": [
+    "Медицинская подготовка — лечение и синтез сывороток",
+    "Меткая стрельба из пистолета",
+    "Проворство — самый юный оперативник S.T.A.R.S.",
+    "Химия — сварка сыворотки против пиявок Маркуса"
+   ],
+   "avatar": "avatars/rebecca-chambers.png",
+   "wiki_page": "Rebecca Chambers",
+   "nameRu": "Ребекка Чемберс"
+  },
+  {
+   "id": "billy-coen",
+   "name": "Billy Coen",
+   "games": [
+    "RE0"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Billy Coen"
+   ],
+   "attacks": [
+    "Подготовка морской пехоты — рукопашный бой",
+    "Физическая сила — таскает тяжести за двоих",
+    "Стрельба из magnum и дробовика",
+    "Живучесть — выжил в аду тренировочного лагеря"
+   ],
+   "avatar": "avatars/billy-coen.png",
+   "wiki_page": "Billy Coen",
+   "nameRu": "Билли Коэн"
+  },
+  {
+   "id": "james-marcus",
+   "name": "James Marcus",
+   "games": [
+    "RE0"
+   ],
+   "role": "villain",
+   "fandom": [
+    "James Marcus"
+   ],
+   "attacks": [
+    "Королева пиявок — регенерация и деление тела",
+    "Управление роями пиявок",
+    "Стрельба из ПП и гранатомёта",
+    "Создатель Т-вируса на основе вируса-Прародителя"
+   ],
+   "avatar": "avatars/james-marcus.png",
+   "wiki_page": "James Marcus",
+   "nameRu": "Джеймс Маркус"
+  },
+  {
+   "id": "chris-redfield",
+   "name": "Chris Redfield",
+   "games": [
+    "RE1",
+    "RE5",
+    "RE6",
+    "RE8",
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Chris Redfield"
+   ],
+   "attacks": [
+    "Мощнейший панч франшизы — выбивает головы с одного удара",
+    "Живучесть — выжил в каждой игре с RE1 по RE8",
+    "Снайперская точность (BSAA Alpha)",
+    "Рукопашный бой — бокс и армейская подготовка"
+   ],
+   "avatar": "avatars/chris-redfield.png",
+   "wiki_page": "Chris Redfield",
+   "nameRu": "Крис Редфилд"
+  },
+  {
+   "id": "jill-valentine",
+   "name": "Jill Valentine",
+   "games": [
+    "RE1",
+    "RE3",
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Jill Valentine"
+   ],
+   "attacks": [
+    "Master of Unlocking — вскрывает любые замки",
+    "Уклонения — фирменные акробатические увороты",
+    "Гранатомёт — её любимый инструмент",
+    "Пережила Раккун-Сити, Немезиса и логово Моргана"
+   ],
+   "avatar": "avatars/jill-valentine.png",
+   "wiki_page": "Jill Valentine",
+   "nameRu": "Джилл Валентайн"
+  },
+  {
+   "id": "barry-burton",
+   "name": "Barry Burton",
+   "games": [
+    "RE1",
+    "REV2"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Barry Burton"
+   ],
+   "attacks": [
+    "Magnum .44 — любит его больше, чем людей",
+    "Оружейник — лично конструирует и модернизирует стволы",
+    "Поддержка — прикрывает и вытаскивает союзников",
+    "Ножевой бой в Rev2 (уже в возрасте)"
+   ],
+   "avatar": "avatars/barry-burton.png",
+   "wiki_page": "Barry Burton",
+   "nameRu": "Барри Бёртон"
+  },
+  {
+   "id": "albert-wesker",
+   "name": "Albert Wesker",
+   "games": [
+    "RE1",
+    "RE5"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Albert Wesker"
+   ],
+   "attacks": [
+    "Super Speed — телепортирующаяся скорость после вируса-Прародителя",
+    "Cobra Strike / Panther Fang — фирменные рукопашные комбо",
+    "Uroboros — финальная форма из чёрных щупалец",
+    "Гениальный тактик — предал всех, кого мог"
+   ],
+   "avatar": "avatars/albert-wesker.png",
+   "wiki_page": "Albert Wesker",
+   "nameRu": "Альберт Вескер"
+  },
+  {
+   "id": "lisa-trevor",
+   "name": "Lisa Trevor",
+   "games": [
+    "RE1"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Lisa Trevor"
+   ],
+   "attacks": [
+    "Бессмертие — 30 лет экспериментов Umbrella её не убили",
+    "Сверхчеловеческая сила и цепи-гиростабилизаторы",
+    "Поглощает вирусы — эксперименты Umbrella только усиливали её",
+    "Регенерация — восстанавливается из любого состояния"
+   ],
+   "avatar": "avatars/lisa-trevor.png",
+   "wiki_page": "Lisa Trevor",
+   "nameRu": "Лиза Тревор"
+  },
+  {
+   "id": "leon-kennedy",
+   "name": "Leon S. Kennedy",
+   "games": [
+    "RE2",
+    "RE4",
+    "RE6",
+    "RE9"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Leon S. Kennedy"
+   ],
+   "attacks": [
+    "Roundhouse Kick — сносит толпу одним ударом ноги",
+    "Суплекс и броски — фирменная борьба",
+    "Воркшоп ножа — парирует мачете и щупальца",
+    "Защитная реакция — уворот-кулак в RE4R/RE9"
+   ],
+   "avatar": "avatars/leon-kennedy.png",
+   "wiki_page": "Leon Scott Kennedy",
+   "nameRu": "Леон С. Кеннеди"
+  },
+  {
+   "id": "claire-redfield",
+   "name": "Claire Redfield",
+   "games": [
+    "RE2",
+    "REV2"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Claire Redfield"
+   ],
+   "attacks": [
+    "Стрельба из гранатомёта с первого раза",
+    "Находчивость — выжила в Раккун-Сити и на острове Севенхолл",
+    "Мотоцикл — вьезжает в ворота на скорости",
+    "Мастер выживания без спецподготовки"
+   ],
+   "avatar": "avatars/claire-redfield.png",
+   "wiki_page": "Claire Redfield",
+   "nameRu": "Клэр Редфилд"
+  },
+  {
+   "id": "ada-wong",
+   "name": "Ada Wong",
+   "games": [
+    "RE2",
+    "RE4",
+    "RE6"
+   ],
+   "role": "wildcard",
+   "fandom": [
+    "Ada Wong"
+   ],
+   "attacks": [
+    "Шпионаж — проникнет куда угодно под любым именем",
+    "Крюк-кошка — акробатические перемещения и побеги",
+    "Взлом и кражи образцов вирусов",
+    "Холодная расчётливость — никто не знает, чья она сторона"
+   ],
+   "avatar": "avatars/ada-wong.png",
+   "wiki_page": "Ada Wong",
+   "nameRu": "Ада Вонг"
+  },
+  {
+   "id": "sherry-birkin",
+   "name": "Sherry Birkin",
+   "games": [
+    "RE2",
+    "RE6",
+    "RE9"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Sherry Birkin"
+   ],
+   "attacks": [
+    "Регенерация G — ранения заживают на глазах",
+    "Адаптация — вирус G принял её как носителя",
+    "Проворство — пролезает в вентиляцию за секунды",
+    "Агент DSO/ФБР — выросла в оперативника"
+   ],
+   "avatar": "avatars/sherry-birkin.png",
+   "wiki_page": "Sherry Birkin",
+   "nameRu": "Шерри Биркин"
+  },
+  {
+   "id": "hunk",
+   "name": "HUNK",
+   "games": [
+    "RE2",
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "HUNK"
+   ],
+   "attacks": [
+    "Neckbreaker — ломает шею одним движением",
+    "Mr. Death — единственный выживший из любой миссии",
+    "Тактика — зачистка противников без единой потери",
+    "Хладнокровие — смерть вокруг, работа по плану"
+   ],
+   "avatar": "avatars/hunk.png",
+   "wiki_page": "HUNK",
+   "nameRu": "ХАНК"
+  },
+  {
+   "id": "william-birkin",
+   "name": "William Birkin",
+   "games": [
+    "RE2"
+   ],
+   "role": "villain",
+   "fandom": [
+    "William Birkin"
+   ],
+   "attacks": [
+    "G-мутации — 4 формы с когтями, щупальцами и второй головой",
+    "Регенерация — восстанавливает тело после любых ран",
+    "G-детёныши — заражает жертв собственным потомством",
+    "Создатель G-вируса"
+   ],
+   "avatar": "avatars/william-birkin.png",
+   "wiki_page": "William Birkin",
+   "nameRu": "Уильям Биркин"
+  },
+  {
+   "id": "mr-x",
+   "name": "Mr. X (T-00)",
+   "games": [
+    "RE2"
+   ],
+   "role": "villain",
+   "fandom": [
+    "T-00"
+   ],
+   "attacks": [
+    "Неутомимое преследование — идёт за тобой всю игру",
+    "Сила пробивать стены кулаком",
+    "Панч в упор — отправляет в нокаут с одного удара",
+    "Броня — обычные пули его почти не волнуют"
+   ],
+   "avatar": "avatars/mr-x.png",
+   "wiki_page": "T-00",
+   "nameRu": "Мистер Икс (T-00)"
+  },
+  {
+   "id": "annette-birkin",
+   "name": "Annette Birkin",
+   "games": [
+    "RE2"
+   ],
+   "role": "wildcard",
+   "fandom": [
+    "Annette Birkin"
+   ],
+   "attacks": [
+    "Химия Umbrella — знает о G-вирусе всё",
+    "Стрельба из пистолета без колебаний",
+    "Расследование — распутывает следы NEST",
+    "Материнский инстинкт — до конца защищает Шерри"
+   ],
+   "avatar": "avatars/annette-birkin.png",
+   "wiki_page": "Annette Birkin",
+   "nameRu": "Анетт Биркин"
+  },
+  {
+   "id": "marvin-branagh",
+   "name": "Marvin Branagh",
+   "games": [
+    "RE2"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Marvin Branagh"
+   ],
+   "attacks": [
+    "Ветеран RPD — полицейский опыт Раккун-Сити",
+    "Ключ и план — открывает Леону путь из участка",
+    "Стойкость — держится раненым до последнего",
+    "Напутствие — верит в Леона до конца"
+   ],
+   "avatar": "avatars/marvin-branagh.png",
+   "wiki_page": "Marvin Branagh",
+   "nameRu": "Марвин Брэнаг"
+  },
+  {
+   "id": "robert-kendo",
+   "name": "Robert Kendo",
+   "games": [
+    "RE2"
+   ],
+   "role": "support",
+   "fandom": [
+    "Robert Kendo"
+   ],
+   "attacks": [
+    "Оружейник — владелец Gun Shop Kendo",
+    "Дробовик в упор",
+    "Отец — прячет дочерей до самого конца",
+    "Скупка и ремонт оружия"
+   ],
+   "avatar": "avatars/robert-kendo.png",
+   "wiki_page": "Robert Kendo",
+   "nameRu": "Роберт Кендо"
+  },
+  {
+   "id": "carlos-oliveira",
+   "name": "Carlos Oliveira",
+   "games": [
+    "RE3"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Carlos Oliveira"
+   ],
+   "attacks": [
+    "Подготовка U.B.C.S. — армейская стрельба и тактика",
+    "Взрывчатка — подрывает пути отхода",
+    "Драйв — водит танки и заезжает в подземелья",
+    "Упорство — получил вакцину от учёного Umbrella"
+   ],
+   "avatar": "avatars/carlos-oliveira.png",
+   "wiki_page": "Carlos Oliveira",
+   "nameRu": "Карлос Оливейра"
+  },
+  {
+   "id": "mikhail-victor",
+   "name": "Mikhail Victor",
+   "games": [
+    "RE3"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Mikhail Victor"
+   ],
+   "attacks": [
+    "Опыт командира U.B.C.S. — ведёт отряд через Раккун-Сити",
+    "Огневая мощь — ПП и гранаты",
+    "Последний подвиг — взрывает вагон вместе с Немезисом",
+    "Защита выживших — прикрывает отступление до конца"
+   ],
+   "avatar": "avatars/mikhail-victor.png",
+   "wiki_page": "Mikhail Viktor",
+   "nameRu": "Михаил Виктор"
+  },
+  {
+   "id": "nemesis",
+   "name": "Nemesis T-Type",
+   "games": [
+    "RE3"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Nemesis-T Type"
+   ],
+   "attacks": [
+    "РПГ — стреляет по Джилл из гранатомёта",
+    "Огнемёт — выжигает укрытия",
+    "Щупальца — растяжимые удары и захват",
+    "«S.T.A.R.S.» — выучил единственное слово"
+   ],
+   "avatar": "avatars/nemesis.png",
+   "wiki_page": "Nemesis-T Type",
+   "nameRu": "Немезида T-Type"
+  },
+  {
+   "id": "nikolai-zinoviev",
+   "name": "Nikolai Zinoviev",
+   "games": [
+    "RE3"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Nikolai Zinoviev"
+   ],
+   "attacks": [
+    "Подрывник — мины и ловушки по всему городу",
+    "Наблюдатель Umbrella — собирает боевые данные под огнём",
+    "Убийство своих — устраняет свидетелей без колебаний",
+    "Выживание — выбрался из эпицентра одним из последних"
+   ],
+   "avatar": "avatars/nikolai-zinoviev.png",
+   "wiki_page": "Nikolai Zinoviev",
+   "nameRu": "Николай Зиновьев"
+  },
+  {
+   "id": "ashley-graham",
+   "name": "Ashley Graham",
+   "games": [
+    "RE4"
+   ],
+   "role": "support",
+   "fandom": [
+    "Ashley Graham"
+   ],
+   "attacks": [
+    "Дочь президента — ради неё влезают в любую передрягу",
+    "Крик — оповещает Леона о проблемах (и врагах)",
+    "Прыжки в окна — мастер побегов",
+    "Прятки — замирает и ускользает от врагов"
+   ],
+   "avatar": "avatars/ashley-graham.png",
+   "wiki_page": "Ashley Graham",
+   "nameRu": "Эшли Грэм"
+  },
+  {
+   "id": "luis-sera",
+   "name": "Luis Sera",
+   "games": [
+    "RE4"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Luis Sera"
+   ],
+   "attacks": [
+    "Биолог-исследователь — знает о Plaga всё",
+    "Быстрое оружие — мгновенно достаёт пистолет",
+    "Обаяние — очаровывает даже Краузера",
+    "Создатель сыворотки против Plaga"
+   ],
+   "avatar": "avatars/luis-sera.png",
+   "wiki_page": "Luis Serra Navarro",
+   "nameRu": "Луис Сера"
+  },
+  {
+   "id": "jack-krauser",
+   "name": "Jack Krauser",
+   "games": [
+    "RE4"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Jack Krauser"
+   ],
+   "attacks": [
+    "Ножевой бой — лучший клинкер франшизы",
+    "Мутировавшая рука — лезвие-Plaga",
+    "Военная подготовка — уровень special forces",
+    "Выносливость — пережил взрыв в подвале"
+   ],
+   "avatar": "avatars/jack-krauser.png",
+   "wiki_page": "Jack Krauser",
+   "nameRu": "Джек Краузер"
+  },
+  {
+   "id": "ramon-salazar",
+   "name": "Ramon Salazar",
+   "games": [
+    "RE4"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Ramon Salazar"
+   ],
+   "attacks": [
+    "Контроль замка — ловушки, лифты и засады",
+    "Слуги Plaga — армия монстров и монахов",
+    "Гигантский цветок Plaga — финальная форма",
+    "Ядовитый юмор — оскорбляет прямо в лицо"
+   ],
+   "avatar": "avatars/ramon-salazar.png",
+   "wiki_page": "Ramón Salazar, 8th Count of Valdelobos",
+   "nameRu": "Рамон Салазар"
+  },
+  {
+   "id": "bitores-mendez",
+   "name": "Bitores Mendez",
+   "games": [
+    "RE4"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Bitores Mendez"
+   ],
+   "attacks": [
+    "Сверхсила — швыряет Леона через амбар",
+    "Растяжимая шея — бьёт на дистанции",
+    "Контроль деревни — командует всеми заражёнными",
+    "Две формы — человек и Plaga-монстр"
+   ],
+   "avatar": "avatars/bitores-mendez.png",
+   "wiki_page": "Bitores Méndez",
+   "nameRu": "Биторес Мендес"
+  },
+  {
+   "id": "osmund-saddler",
+   "name": "Osmund Saddler",
+   "games": [
+    "RE4"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Osmund Saddler"
+   ],
+   "attacks": [
+    "Голосовой контроль — владеет разумом всех носителей Plaga",
+    "Гигантская Plaga-паучья форма",
+    "Сеть секты Los Illuminados по всей Европе",
+    "Терпение — строил план в течение десятилетий"
+   ],
+   "avatar": "avatars/osmund-saddler.png",
+   "wiki_page": "Osmund Saddler",
+   "nameRu": "Осмунд Саддлер"
+  },
+  {
+   "id": "merchant",
+   "name": "The Merchant",
+   "games": [
+    "RE4"
+   ],
+   "role": "support",
+   "fandom": [
+    "The Merchant"
+   ],
+   "attacks": [
+    "«Whaddaya buyin'?» — бесконечный инвентарь в любой точке мира",
+    "Апгрейд оружия на месте боя",
+    "Продаёт РПГ за песеты",
+    "Выживает везде, где Леон"
+   ],
+   "avatar": "avatars/merchant.png",
+   "wiki_page": "Merchant",
+   "nameRu": "Торговец"
+  },
+  {
+   "id": "ingrid-hunnigan",
+   "name": "Ingrid Hunnigan",
+   "games": [
+    "RE4"
+   ],
+   "role": "support",
+   "fandom": [
+    "Ingrid Hunnigan"
+   ],
+   "attacks": [
+    "Связь — наводит Леона по рации в реальном времени",
+    "Информподдержка — карты и цели миссии",
+    "Спокойствие — остаётся на связи в катастрофе",
+    "Взлом — правительственные системы по запросу"
+   ],
+   "avatar": "avatars/ingrid-hunnigan.png",
+   "wiki_page": "Ingrid Hunnigan",
+   "nameRu": "Ингрид Ханниган"
+  },
+  {
+   "id": "sheva-alomar",
+   "name": "Sheva Alomar",
+   "games": [
+    "RE5"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Sheva Alomar"
+   ],
+   "attacks": [
+    "Подготовка BSAA West Africa",
+    "Меткость — стреляет без промаха в движении",
+    "Акробатические уклонения",
+    "Знание местности и языков Африки"
+   ],
+   "avatar": "avatars/sheva-alomar.png",
+   "wiki_page": "Sheva Alomar",
+   "nameRu": "Шева Аломар"
+  },
+  {
+   "id": "excella-gionne",
+   "name": "Excella Gionne",
+   "fandom": [
+    "Excella Gionne"
+   ],
+   "games": [
+    "RE5"
+   ],
+   "role": "villain",
+   "attacks": [
+    "Ресурсы TRICELL — финансирует биотеррор",
+    "Амбиции — метила в новую главу Umbrella",
+    "Позиционирование — всегда держит охрану",
+    "Uroboros — получила высшую дозу и растворилась"
+   ],
+   "avatar": "avatars/excella-gionne.png",
+   "wiki_page": "Excella Gionne",
+   "nameRu": "Экслла Джионе"
+  },
+  {
+   "id": "ricardo-irving",
+   "name": "Ricardo Irving",
+   "games": [
+    "RE5"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Ricardo Irving"
+   ],
+   "attacks": [
+    "Торговля биооружием — поставляет El Gigante и Plaga",
+    "ПП в упор",
+    "Инстинкт самосохранения — сбегает от всех",
+    "Инъекция Plaga — превращает себя в морского монстра"
+   ],
+   "avatar": "avatars/ricardo-irving.png",
+   "wiki_page": "Ricardo Irving",
+   "nameRu": "Рикардо Ирвинг"
+  },
+  {
+   "id": "helena-harper",
+   "name": "Helena Harper",
+   "games": [
+    "RE6"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Helena Harper"
+   ],
+   "attacks": [
+    "Стрельба из дробовика и пистолета",
+    "Государственная подготовка агентства",
+    "Воля — тащит Леона через кладбище мертвецов",
+    "Совесть — призналась в ошибки и приняла срок"
+   ],
+   "avatar": "avatars/helena-harper.png",
+   "wiki_page": "Helena Harper",
+   "nameRu": "Хелена Харпер"
+  },
+  {
+   "id": "piers-nivans",
+   "name": "Piers Nivans",
+   "games": [
+    "RE6"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Piers Nivans"
+   ],
+   "attacks": [
+    "Снайперская стрельба BSAA",
+    "C-вирус — мутировавшая рука-генератор молний",
+    "Электрошок — разряды бьют на дистанции",
+    "Лояльность — пожертвовал собой ради Криса"
+   ],
+   "avatar": "avatars/piers-nivans.png",
+   "wiki_page": "Piers Nivans",
+   "nameRu": "Пирс Ниванс"
+  },
+  {
+   "id": "jake-muller",
+   "name": "Jake Muller",
+   "games": [
+    "RE6"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Jake Muller"
+   ],
+   "attacks": [
+    "Антитела к C-вирусу — живая вакцина",
+    "Рукопашный бой — дерётся с Устанаком врукопашную",
+    "Наёмничий опыт — стрельба и снайперские трюки",
+    "Сын Вескера — гены суперсолдата"
+   ],
+   "avatar": "avatars/jake-muller.png",
+   "wiki_page": "Jake Muller",
+   "nameRu": "Джейк Мюллер"
+  },
+  {
+   "id": "derek-simmons",
+   "name": "Derek C. Simmons",
+   "games": [
+    "RE6"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Derek C. Simmons"
+   ],
+   "attacks": [
+    "C-вирус — многоликое превращение в тирана",
+    "Телепорт-рывки и клоны-кони",
+    "Контроль The Family — теневое правительство мира",
+    "Ресурсы — организовал катастрофу в Талл-Оукс"
+   ],
+   "avatar": "avatars/derek-simmons.png",
+   "wiki_page": "Derek C. Simmons",
+   "nameRu": "Дерек Симмонс"
+  },
+  {
+   "id": "carla-radames",
+   "name": "Carla Radames",
+   "games": [
+    "RE6"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Carla Radames"
+   ],
+   "attacks": [
+    "Гениальный учёный — создала C-вирус",
+    "Маскарад — стала двойником Ады",
+    "Шантаж и конспирация — управляла Neo-Umbrella",
+    "Финальная мутация — форма-хамелеон"
+   ],
+   "avatar": "avatars/carla-radames.png",
+   "wiki_page": "Carla Radames",
+   "nameRu": "Карла Радамес"
+  },
+  {
+   "id": "ustanak",
+   "name": "Ustanak",
+   "games": [
+    "RE6"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Ustanak"
+   ],
+   "attacks": [
+    "Неутомимый захватчик — ловит Джейка всю игру",
+    "Сменные руки — коготь, бурильщик и пулемёт",
+    "Сила тирана — ломает бронетехнику",
+    "Устойчивость — переживает падения с высоток"
+   ],
+   "avatar": "avatars/ustanak.png",
+   "wiki_page": "Ustanak",
+   "nameRu": "Устанак"
+  },
+  {
+   "id": "ethan-winters",
+   "name": "Ethan Winters",
+   "games": [
+    "RE7",
+    "RE8"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Ethan Winters"
+   ],
+   "attacks": [
+    "Регенерация плесени — отращивает оторванные руки",
+    "Крафт — собирает патроны и лекарства из хлама",
+    "Терпение — выжил в двух домах кошмара",
+    "Обычный инженер — и главный выживший дважды"
+   ],
+   "avatar": "avatars/ethan-winters.png",
+   "wiki_page": "Ethan Winters",
+   "nameRu": "Итан Уинтерс"
+  },
+  {
+   "id": "mia-winters",
+   "name": "Mia Winters",
+   "games": [
+    "RE7",
+    "RE8"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Mia Winters"
+   ],
+   "attacks": [
+    "Работа на The Connections — агент-курьер",
+    "Владение ножом и мачете",
+    "Стрельба на нервах — держит поле одна",
+    "Мама года — спасла Розу от Миранды"
+   ],
+   "avatar": "avatars/mia-winters.png",
+   "wiki_page": "Mia Winters",
+   "nameRu": "Миа Уинтерс"
+  },
+  {
+   "id": "jack-baker",
+   "name": "Jack Baker",
+   "games": [
+    "RE7"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Jack Baker"
+   ],
+   "attacks": [
+    "Регенерация — отпили голову, отрастёт",
+    "Бензопила — дуэль на инструментах",
+    "Лопата и кулаки — избиение в темноте",
+    "«Welcome to the family, son!»"
+   ],
+   "avatar": "avatars/jack-baker.png",
+   "wiki_page": "Jack Baker",
+   "nameRu": "Джек Бейкер"
+  },
+  {
+   "id": "marguerite-baker",
+   "name": "Marguerite Baker",
+   "games": [
+    "RE7"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Marguerite Baker"
+   ],
+   "attacks": [
+    "Контроль насекомых — рой жуков по всей усадьбе",
+    "Когти и конечности-мутации",
+    "Стрельба из старого дробовика",
+    "Устойчивость к огню — горит и продолжает"
+   ],
+   "avatar": "avatars/marguerite-baker.png",
+   "wiki_page": "Marguerite Baker",
+   "nameRu": "Маргарита Бейкер"
+  },
+  {
+   "id": "lucas-baker",
+   "name": "Lucas Baker",
+   "games": [
+    "RE7"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Lucas Baker"
+   ],
+   "attacks": [
+    "Инженер ловушек — взрывы, головоломки и смертельные игры",
+    "Хакер и гений IQ",
+    "Иммунитет к плесени — контролирует себя",
+    "Кальцинированная рука — охранное оружие"
+   ],
+   "avatar": "avatars/lucas-baker.png",
+   "wiki_page": "Lucas Baker",
+   "nameRu": "Лукас Бейкер"
+  },
+  {
+   "id": "zoe-baker",
+   "name": "Zoe Baker",
+   "games": [
+    "RE7"
+   ],
+   "role": "support",
+   "fandom": [
+    "Zoe Baker"
+   ],
+   "attacks": [
+    "Знание усадьбы — единственная добрая Бейкер",
+    "Плесень-связь — говорила с Итаном через книгу",
+    "Выживание — вырвалась и вылечилась",
+    "Навигация болотами"
+   ],
+   "avatar": "avatars/zoe-baker.png",
+   "wiki_page": "Zoe Baker",
+   "nameRu": "Зоя Бейкер"
+  },
+  {
+   "id": "eveline",
+   "name": "Eveline",
+   "games": [
+    "RE7"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Eveline"
+   ],
+   "attacks": [
+    "Ментальный контроль — подчиняет всех заражённых плесенью",
+    "E-001 — совершенное биооружие",
+    "Создание семьи Бейкер — вся усадьба под контролем",
+    "Финальная форма — гигантский монстр из плесени"
+   ],
+   "avatar": "avatars/eveline.png",
+   "wiki_page": "Eveline",
+   "nameRu": "Ивлин"
+  },
+  {
+   "id": "joe-baker",
+   "name": "Joe Baker",
+   "games": [
+    "RE7"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Joe Baker"
+   ],
+   "attacks": [
+    "Кулаки — убивает мутантов врукопашную",
+    "Ловушки болотного охотника",
+    "Сила старика, которая кормит аллигаторов",
+    "Упорство — спас Зои в одиночку"
+   ],
+   "avatar": "avatars/joe-baker.png",
+   "wiki_page": "Joe Baker",
+   "nameRu": "Джо Бейкер"
+  },
+  {
+   "id": "alcina-dimitrescu",
+   "name": "Alcina Dimitrescu",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Alcina Dimitrescu"
+   ],
+   "attacks": [
+    "Рост 2.9 метра — сила гиганта",
+    "Когти — удары на всю комнату",
+    "Стая мух — превращается в туман и рой",
+    "Регенерация — перерождается после ранений"
+   ],
+   "avatar": "avatars/alcina-dimitrescu.png",
+   "wiki_page": "Alcina Dimitrescu",
+   "nameRu": "Альчина Димитреску"
+  },
+  {
+   "id": "bela-dimitrescu",
+   "name": "Bela Dimitrescu",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Bela Dimitrescu"
+   ],
+   "attacks": [
+    "Стая мух — рассыпается на рой и перелетает",
+    "Серп — ближний бой в подземельях замка",
+    "Регенерация — раны затягиваются мгновенно",
+    "Хладнокровие — старшая и самая расчётливая дочь"
+   ],
+   "avatar": "avatars/bela-dimitrescu.png",
+   "wiki_page": "Bela Dimitrescu",
+   "nameRu": "Бела Димитреску"
+  },
+  {
+   "id": "cassandra-dimitrescu",
+   "name": "Cassandra Dimitrescu",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Cassandra Dimitrescu"
+   ],
+   "attacks": [
+    "Стая мух — телом управляет рой насекомых",
+    "Серп — рубит с засад в вентиляции",
+    "Регенерация — восстанавливается из роя",
+    "Садизм — любит мучения больше всех"
+   ],
+   "avatar": "avatars/cassandra-dimitrescu.png",
+   "wiki_page": "Cassandra Dimitrescu",
+   "nameRu": "Кассандра Димитреску"
+  },
+  {
+   "id": "daniela-dimitrescu",
+   "name": "Daniela Dimitrescu",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Daniela Dimitrescu"
+   ],
+   "attacks": [
+    "Стая мух — самое рыхлое и безумное тело",
+    "Серп — атаки с воплями и смехом",
+    "Регенерация — рой пересобирает тело",
+    "Мания — преследует жертву ради игры"
+   ],
+   "avatar": "avatars/daniela-dimitrescu.png",
+   "wiki_page": "Daniela Dimitrescu",
+   "nameRu": "Даниэла Димитреску"
+  },
+  {
+   "id": "karl-heisenberg",
+   "name": "Karl Heisenberg",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Karl Heisenberg"
+   ],
+   "attacks": [
+    "Магнетизм — управляет металлом на поле боя",
+    "Армия Soldat — улучшенные солдаты",
+    "Механический молот",
+    "Гигантская форма — стальной кибернетический монстр"
+   ],
+   "avatar": "avatars/karl-heisenberg.png",
+   "wiki_page": "Karl Heisenberg",
+   "nameRu": "Карл Гейзенберг"
+  },
+  {
+   "id": "donna-beneviento",
+   "name": "Donna Beneviento",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Donna Beneviento"
+   ],
+   "attacks": [
+    "Галлюциногенная пыльца — ломает разум врага",
+    "Кукла Angie — говорит и атакует через неё",
+    "Иллюзии дома — весь особняк-лабиринт",
+    "Манипуляция страхом"
+   ],
+   "avatar": "avatars/donna-beneviento.png",
+   "wiki_page": "Donna Beneviento",
+   "nameRu": "Донна Беневиенто"
+  },
+  {
+   "id": "salvatore-moreau",
+   "name": "Salvatore Moreau",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Salvatore Moreau"
+   ],
+   "attacks": [
+    "Кислота — плевки, растворяющие броню",
+    "Водная форма — монстр-русал в водохранилище",
+    "Контроль резервуара — топит и перекрывает пути",
+    "Устойчивость в воде"
+   ],
+   "avatar": "avatars/salvatore-moreau.png",
+   "wiki_page": "Salvatore Moreau",
+   "nameRu": "Сальваторе Моро"
+  },
+  {
+   "id": "mother-miranda",
+   "name": "Mother Miranda",
+   "games": [
+    "RE8"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Miranda"
+   ],
+   "attacks": [
+    "Мастерство плесени — копирует любого человека",
+    "Мутации — крылья, щупальца, когти одновременно",
+    "Возрождение — переродилась сотни раз",
+    "Интеллект — сто лет исследований и экспериментов"
+   ],
+   "avatar": "avatars/mother-miranda.png",
+   "wiki_page": "Miranda",
+   "nameRu": "Мать Миранда"
+  },
+  {
+   "id": "rosemary-winters",
+   "name": "Rosemary Winters",
+   "games": [
+    "RE8"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Rosemary Winters"
+   ],
+   "attacks": [
+    "Абсолютная сила плесени — сильнее Ивлин",
+    "Чтение и поглощение мегамицелия",
+    "Дублирование тела и форм",
+    "Потенциал живого оружия — под контролем MK"
+   ],
+   "avatar": "avatars/rosemary-winters.png",
+   "wiki_page": "Rosemary Winters",
+   "nameRu": "Розмари Уинтерс"
+  },
+  {
+   "id": "the-duke",
+   "name": "The Duke",
+   "games": [
+    "RE8"
+   ],
+   "role": "support",
+   "fandom": [
+    "The Duke"
+   ],
+   "attacks": [
+    "Телепортация магазина — «strap in and I'll drive»",
+    "Тяжёлая артиллерия в продаже",
+    "Знание деревни и всех лордов",
+    "Невозможная живучесть"
+   ],
+   "avatar": "avatars/the-duke.png",
+   "wiki_page": "The Duke",
+   "nameRu": "Герцог"
+  },
+  {
+   "id": "grace-ashcroft",
+   "name": "Grace Ashcroft",
+   "games": [
+    "RE9"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Grace Ashcroft"
+   ],
+   "attacks": [
+    "Аналитика ФБР — расследование и дедукция",
+    "Стелс и выживание вместо огневой мощи",
+    "Стрельба под давлением",
+    "Наследие матери — стоит на следах Раккун-Сити"
+   ],
+   "avatar": "avatars/grace-ashcroft.png",
+   "wiki_page": "Grace Ashcroft",
+   "nameRu": "Грейс Эшкрофт"
+  },
+  {
+   "id": "victor-gideon",
+   "name": "Victor Gideon",
+   "games": [
+    "RE9"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Victor Gideon"
+   ],
+   "attacks": [
+    "Бывший исследователь Umbrella — эксперт по Т-вирусу",
+    "Сеть серийных смертей по США",
+    "Ресурсы и связи корпорации",
+    "Биотерроризм нового поколения"
+   ],
+   "avatar": "avatars/victor-gideon.png",
+   "wiki_page": "Victor Gideon",
+   "nameRu": "Виктор Гидеон"
+  },
+  {
+   "id": "zeno",
+   "name": "Zeno",
+   "games": [
+    "RE9"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Zeno (Requiem)",
+    "Zeno"
+   ],
+   "attacks": [
+    "Второй антагонист — действует на другом фронте",
+    "Криминальная империя",
+    "Боевой двойник в BSAA (по касту)",
+    "Данные о приёмах ограничены"
+   ],
+   "avatar": "avatars/zeno.png",
+   "wiki_page": "Zeno",
+   "nameRu": "Зино"
+  },
+  {
+   "id": "emily-requiem",
+   "name": "Emily",
+   "games": [
+    "RE9"
+   ],
+   "role": "support",
+   "fandom": [
+    "Emily (Requiem)",
+    "Emily"
+   ],
+   "attacks": [
+    "Выживание в центре хронической помощи",
+    "Сопровождение — эскорт-сюрприз для игрока",
+    "Хрупкость — нужна защита",
+    "Тайна своего состояния"
+   ],
+   "avatar": "avatars/emily-requiem.png",
+   "wiki_page": "Emily",
+   "nameRu": "Эмили"
+  },
+  {
+   "id": "parker-luciani",
+   "name": "Parker Luciani",
+   "games": [
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Parker Luciani"
+   ],
+   "attacks": [
+    "Подготовка FBC и дайвинг",
+    "Дробовик в упор",
+    "Морская операционка",
+    "Лояльность — вернулся за Рейчел до конца"
+   ],
+   "avatar": "avatars/parker-luciani.png",
+   "wiki_page": "Parker Luciani",
+   "nameRu": "Паркер Лучиани"
+  },
+  {
+   "id": "jessica-sherawat",
+   "name": "Jessica Sherawat",
+   "games": [
+    "REV1"
+   ],
+   "role": "wildcard",
+   "fandom": [
+    "Jessica Sherawat"
+   ],
+   "attacks": [
+    "Снайперская винтовка и револьвер",
+    "Дайвинг и альпинизм",
+    "Двойная игра — агент Parker на задании",
+    "Проворство в холодных водах"
+   ],
+   "avatar": "avatars/jessica-sherawat.png",
+   "wiki_page": "Jessica Sherawat",
+   "nameRu": "Джессика Шерават"
+  },
+  {
+   "id": "keith-lumley",
+   "name": "Keith Lumley",
+   "games": [
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Keith Lumley"
+   ],
+   "attacks": [
+    "Маскировка — невидимость на корточках",
+    "Ножевой бой",
+    "Скалолазание и скрытность",
+    "Юмор как оружие"
+   ],
+   "avatar": "avatars/keith-lumley.png",
+   "wiki_page": "Keith Lumley",
+   "nameRu": "Кит Ламли"
+  },
+  {
+   "id": "quint-cetcham",
+   "name": "Quint Cetcham",
+   "games": [
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Quint Cetcham"
+   ],
+   "attacks": [
+    "Гений техники — взлом и сканеры",
+    "Прыжки и акробатика",
+    "Дроны и гаджеты FBC",
+    "Анализ данных в реальном времени"
+   ],
+   "avatar": "avatars/quint-cetcham.png",
+   "wiki_page": "Quint Cetcham",
+   "nameRu": "Куинт Кетчем"
+  },
+  {
+   "id": "raymond-vester",
+   "name": "Raymond Vester",
+   "games": [
+    "REV1"
+   ],
+   "role": "wildcard",
+   "fandom": [
+    "Raymond Vester"
+   ],
+   "attacks": [
+    "Наблюдение и шантаж",
+    "Кооперация с Хантерами",
+    "Контрразведка — переиграл Моргана",
+    "Скрытность на корабле"
+   ],
+   "avatar": "avatars/raymond-vester.png",
+   "wiki_page": "Raymond Vester",
+   "nameRu": "Рэймонд Вестер"
+  },
+  {
+   "id": "rachel-foley",
+   "name": "Rachel Foley",
+   "games": [
+    "REV1"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Rachel Foley"
+   ],
+   "attacks": [
+    "Подготовка BSAA — стрелковое оружие",
+    "Разведка затонувшего корабля",
+    "Воля до конца",
+    "Наследие — её тело стало Scagdead"
+   ],
+   "avatar": "avatars/rachel-foley.png",
+   "wiki_page": "Rachel Foley",
+   "nameRu": "Рейчел Фоули"
+  },
+  {
+   "id": "morgan-lansdale",
+   "name": "Morgan Lansdale",
+   "games": [
+    "REV1"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Morgan Lansdale"
+   ],
+   "attacks": [
+    "Контроль FBC — флот и ресурсы агентства",
+    "Заговор Лас-Паргас — устроил теракт для власти",
+    "Риторика — продал миру идею карантина",
+    "Хантеры по заказу"
+   ],
+   "avatar": "avatars/morgan-lansdale.png",
+   "wiki_page": "Morgan Lansdale",
+   "nameRu": "Морган Лансдейл"
+  },
+  {
+   "id": "jack-norman",
+   "name": "Jack Norman",
+   "games": [
+    "REV1"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Jack Norman"
+   ],
+   "attacks": [
+    "Лидер Veltro — террористические атаки",
+    "Метановая бомба — угроза всему флоту",
+    "Броня и ПП",
+    "Шантаж компроматом на Моргана"
+   ],
+   "avatar": "avatars/jack-norman.png",
+   "wiki_page": "Jack Norman",
+   "nameRu": "Джек Норман"
+  },
+  {
+   "id": "moira-burton",
+   "name": "Moira Burton",
+   "games": [
+    "REV2"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Moira Burton"
+   ],
+   "attacks": [
+    "Фонарик — ослепляет врагов в темноте",
+    "Отмычки — вскрывает шкафы и сейфы",
+    "Стрельба (после преодоления страха)",
+    "Наследие отца — знает оружие"
+   ],
+   "avatar": "avatars/moira-burton.png",
+   "wiki_page": "Moira Burton",
+   "nameRu": "Мойра Бёртон"
+  },
+  {
+   "id": "natalia-korda",
+   "name": "Natalia Korda",
+   "games": [
+    "REV2"
+   ],
+   "role": "hero",
+   "fandom": [
+    "Natalia Korda"
+   ],
+   "attacks": [
+    "Чувство монстров — видит невидимых Lottis",
+    "Кирпич — легендарное оружие против Uroboros",
+    "Слух — слышит дыхание врагов",
+    "Сосуд для Алекс — устойчива к страху"
+   ],
+   "avatar": "avatars/natalia-korda.png",
+   "wiki_page": "Natalia Korda",
+   "nameRu": "Наталия Корда"
+  },
+  {
+   "id": "alex-wesker",
+   "name": "Alex Wesker",
+   "games": [
+    "REV2"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Alex Wesker"
+   ],
+   "attacks": [
+    "Гений — исследовала бессмертие и сознание",
+    "Перенос сознания — перезаписалась в Наталию",
+    "Уроboros-форма — финальный мутант",
+    "Стрельба из пистолета и ядовитый ум"
+   ],
+   "avatar": "avatars/alex-wesker.png",
+   "wiki_page": "Alex Wesker",
+   "nameRu": "Алекс Вескер"
+  },
+  {
+   "id": "neil-fisher",
+   "name": "Neil Fisher",
+   "games": [
+    "REV2"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Neil Fisher"
+   ],
+   "attacks": [
+    "Предательство TerraSave — сдал своих",
+    "Uroboros-инъекция — усиленное тело",
+    "Рукопашный бой с мутацией",
+    "Харизма лидера"
+   ],
+   "avatar": "avatars/neil-fisher.png",
+   "wiki_page": "Neil Fisher",
+   "nameRu": "Нил Фишер"
+  },
+  {
+   "id": "pedro-fernandez",
+   "name": "Pedro Fernandez",
+   "games": [
+    "REV2"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Pedro Fernandez"
+   ],
+   "attacks": [
+    "Uroboros-мутация — гигантская голова с одним глазом",
+    "Ударная волна — разбрасывает врагов телом",
+    "Горная выработка — топором по живым",
+    "Инженер-подземник"
+   ],
+   "avatar": "avatars/pedro-fernandez.png",
+   "wiki_page": "Pedro Fernandez",
+   "nameRu": "Педро Фернандес"
+  }
+ ]
+}

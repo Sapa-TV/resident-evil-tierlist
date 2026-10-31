@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+
+tierlist.html
+scripts/build_tierlist.py
+avatars.zip
+sheet_all.png
+raw/
