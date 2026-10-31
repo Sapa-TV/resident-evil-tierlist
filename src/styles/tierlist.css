@@ -38,7 +38,7 @@ button {
 button:hover { border-color: #c33; color: #fff; }
 
 #cols {
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; align-items: start;
+  display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 12px; align-items: start;
 }
 .row {
   display: flex; border-radius: 10px; overflow: hidden;
