@@ -148,7 +148,8 @@ export function initTierList(cfg) {
     const cards = [...container.el.querySelectorAll(".card:not(.dragging)")];
     for (const card of cards) {
       const r = card.getBoundingClientRect();
-      if (x < r.left + r.width / 2) { container.el.insertBefore(cardEl, card); return; }
+      if (y < r.top) { container.el.insertBefore(cardEl, card); return; }
+      if (y < r.bottom && x < r.left + r.width / 2) { container.el.insertBefore(cardEl, card); return; }
     }
     container.el.appendChild(cardEl);
   }
@@ -193,7 +194,33 @@ export function initTierList(cfg) {
     if (src) syncFromDOM(src);
     syncFromDOM(dest);
     applyFilter();
+    layoutShot();
   });
+
+  const shotBtn = document.getElementById("shot");
+
+  function layoutShot() {
+    if (!shotBtn) return;
+    const shot = document.body.classList.contains("shot");
+    document.querySelectorAll(".row").forEach(row => {
+      const zone = row.querySelector(".dropzone");
+      if (!shot || !zone) { row.style.height = ""; return; }
+      row.style.height = "auto";
+      const has = zone.querySelector(".card:not(.hidden)");
+      row.style.height = has
+        ? Math.ceil(zone.scrollHeight) + 14 + "px"
+        : "";
+    });
+  }
+
+  if (shotBtn) {
+    shotBtn.addEventListener("click", () => {
+      const on = document.body.classList.toggle("shot");
+      shotBtn.setAttribute("aria-pressed", String(on));
+      layoutShot();
+    });
+    window.addEventListener("resize", layoutShot);
+  }
 
   searchEl.addEventListener("input", applyFilter);
 
@@ -204,6 +231,7 @@ export function initTierList(cfg) {
       card.classList.toggle("hidden", !hit);
     });
     updateAllRowBtns();
+    layoutShot();
   }
 
   window.addEventListener("resize", updateAllRowBtns);

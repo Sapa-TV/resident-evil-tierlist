@@ -156,6 +156,19 @@ button {
 }
 button:hover { border-color: var(--stamp); color: #fff; }
 button:active { transform: translateY(1px); }
+#shot[aria-pressed="true"] {
+  background: var(--paper); border-color: var(--paper); color: var(--ink);
+}
+
+body.shot #cols { grid-template-columns: 1fr; }
+body.shot #poolwrap { display: none; }
+body.shot .row-btn { display: none; }
+body.shot .dropzone {
+  flex-wrap: wrap; overflow: visible;
+  row-gap: 6px; align-content: flex-start;
+}
+body.shot .row { height: auto; min-height: 52px; }
+body.shot .dropzone:not(:has(.card)) { min-height: calc(52px - 12px); }
 
 #cols {
   display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
