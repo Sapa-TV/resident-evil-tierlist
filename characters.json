@@ -184,6 +184,27 @@
    "nameRu": "Лиза Тревор"
   },
   {
+   "id": "oswell-spencer",
+   "name": "Oswell E. Spencer",
+   "games": [
+    "RE0",
+    "RE5"
+   ],
+   "role": "villain",
+   "fandom": [
+    "Oswell E. Spencer"
+   ],
+   "attacks": [
+    "Один из трёх основателей Umbrella — вместе с Маркусом и Эшфордом",
+    "Миллиардер-аристократ — финансировал разработку Т-вируса",
+    "Пережил испанский грипп и решил, что достоин бессмертия, — ради этого и создал Umbrella",
+    "Годы прятался в Восточной Европе, пока Вескер не нашёл и не убил его в RE5"
+   ],
+   "avatar": "avatars/oswell-spencer.png",
+   "wiki_page": "Oswell E. Spencer",
+   "nameRu": "Освелл Э. Спенсер"
+  },
+  {
    "id": "leon-kennedy",
    "name": "Leon S. Kennedy",
    "games": [
