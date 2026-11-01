@@ -7,12 +7,6 @@ const DEFAULT_TIERS = [
   { key: "F", color: "#9a8be6" },
 ];
 
-function dataHash(s) {
-  let h = 0;
-  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0;
-  return (h >>> 0).toString(36);
-}
-
 function fillChips(row, items) {
   row.innerHTML = "";
   for (const x of items) {
@@ -24,7 +18,7 @@ function fillChips(row, items) {
 
 export function initTierList(cfg) {
   const byId = Object.fromEntries(cfg.items.map(i => [i.id, i]));
-  const LS_KEY = cfg.lsPrefix + "-" + dataHash(JSON.stringify(cfg.items));
+  const LS_KEY = cfg.lsPrefix;
 
   const tiersEl = document.getElementById("tiers");
   const poolEl = document.getElementById("pool");
