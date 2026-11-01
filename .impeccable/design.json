@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T11:30:00+03:00",
+  "title": "Design System: Досье R.P.D. (Resident Evil Tierlist)",
+  "extensions": {
+    "colorMeta": {
+      "desk": { "role": "neutral", "displayName": "Стальной стол", "canonical": "#15171c", "tonalRamp": ["#0c0d10", "#111318", "#15171c", "#1d2027", "#262a33", "#333947", "#454b58", "#565e69"] },
+      "steel": { "role": "neutral", "displayName": "Сталь лотка", "canonical": "#1d2027", "tonalRamp": ["#101216", "#15171c", "#1d2027", "#262a33", "#333947", "#414854", "#565e69", "#6b7382"] },
+      "inset": { "role": "neutral", "displayName": "Утопленная зона", "canonical": "#101216", "tonalRamp": ["#08090b", "#0c0d10", "#101216", "#181c23", "#232730", "#2f3440", "#3d443f", "#4d5462"] },
+      "paper": { "role": "primary", "displayName": "Манильская бумага", "canonical": "#d8c9a3", "tonalRamp": ["#4a4132", "#6d5f42", "#8a7a56", "#a69674", "#b3a684", "#cdbd97", "#d8c9a3", "#e3d6b4"] },
+      "paper-hi": { "role": "primary", "displayName": "Бумага досье", "canonical": "#e3d6b4", "tonalRamp": ["#5c5140", "#6d5f42", "#8a7a56", "#a69674", "#c9b98f", "#d8c9a3", "#e3d6b4", "#f0e7d2"] },
+      "ink": { "role": "neutral", "displayName": "Чернила", "canonical": "#1a1712", "tonalRamp": ["#1a1712", "#2e281d", "#4a4132", "#5c5140", "#6d5f42", "#8a7a56", "#a69674", "#c9b98f"] },
+      "stamp": { "role": "accent", "displayName": "Штемпельная краска", "canonical": "#b5342c", "tonalRamp": ["#5c1a16", "#7e2320", "#b5342c", "#d0453a", "#e06a5c", "#eb9186", "#f2b8b0", "#f9ddd9"] },
+      "tier-s": { "role": "data", "displayName": "Гриф S", "canonical": "#c2453a", "tonalRamp": ["#5c1a16", "#8a2f27", "#c2453a", "#d4685c", "#e08a7e", "#ebaca1", "#f2cdc5", "#f9ebe8"] },
+      "tier-a": { "role": "data", "displayName": "Гриф A", "canonical": "#c07b2f", "tonalRamp": ["#5c3a16", "#8a571f", "#c07b2f", "#d0954f", "#dcaf70", "#e9c893", "#f2dfb8", "#f9f0dd"] },
+      "tier-b": { "role": "data", "displayName": "Гриф B", "canonical": "#b9a72e", "tonalRamp": ["#554c13", "#7d7020", "#b9a72e", "#c8b94f", "#d6ca72", "#e4da96", "#f0e9bd", "#f8f4de"] },
+      "tier-c": { "role": "data", "displayName": "Гриф C", "canonical": "#5d8f45", "tonalRamp": ["#2a421f", "#3f6330", "#5d8f45", "#79a661", "#95bd7f", "#b2d49f", "#cfe9c0", "#e9f5e1"] },
+      "tier-d": { "role": "data", "displayName": "Гриф D", "canonical": "#3f7d9e", "tonalRamp": ["#1d3a4a", "#2a5670", "#3f7d9e", "#5f97b4", "#82b1c8", "#a6cadb", "#c9e3ee", "#e6f3f8"] },
+      "tier-f": { "role": "data", "displayName": "Гриф F", "canonical": "#7a6fae", "tonalRamp": ["#37324f", "#544c76", "#7a6fae", "#968cc0", "#b2a9d1", "#cfc7e2", "#e6e1f0", "#f4f1f9"] },
+      "text": { "role": "neutral", "displayName": "Текст на стали", "canonical": "#e4e1d8", "tonalRamp": ["#1a1712", "#333947", "#565e69", "#7a8290", "#98a0ab", "#b9bfc7", "#d4d6d2", "#e4e1d8"] },
+      "dim": { "role": "neutral", "displayName": "Приглушённый текст", "canonical": "#98a0ab", "tonalRamp": ["#333947", "#454b58", "#565e69", "#7a8290", "#98a0ab", "#b9bfc7", "#d4d6d2", "#e4e1d8"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Oswald Display", "purpose": "Заголовок дела, грифы, навигация-вкладки, имя в досье — всегда капс с positive tracking." },
+      "label": { "displayName": "Oswald Griff", "purpose": "Буква грифа в плашке лотка, 36px 700." },
+      "body": { "displayName": "Plex Mono Body", "purpose": "Служебный текст, примечания, лайтбокс — машинопись следственного дела." },
+      "machine": { "displayName": "Plex Mono Machine", "purpose": "Микроподписи 8–11px с tracking ≥0.18em: ГРИФ, счётчики, позиции." }
+    },
+    "shadows": [
+      { "name": "tray-raise", "value": "inset 0 1px 0 rgba(255,255,255,.04), 0 2px 6px rgba(0,0,0,.25)", "purpose": "Лоток-ряд над стальным столом." },
+      { "name": "recess", "value": "inset 0 3px 9px rgba(0,0,0,.5)", "purpose": "Утопленная зона дропа — материал углубления." },
+      { "name": "paper-lift", "value": "0 2px 10px rgba(0,0,0,.35)", "purpose": "Манильский банк над столом." },
+      { "name": "dossier-open", "value": "0 4px 26px rgba(0,0,0,.5), inset 0 0 0 1px rgba(26,23,18,.08)", "purpose": "Открытое досье лайтбокса." }
+    ],
+    "motion": [
+      { "name": "stamp-press", "value": "cubic-bezier(.16, 1, .3, 1) 300ms", "purpose": "Прижатие карточки при размещении в лоток (scale 1.14 → 1 с осадкой поворота)." },
+      { "name": "dossier-in", "value": "cubic-bezier(.16, 1, .3, 1) 250ms", "purpose": "Раскрытие досье: opacity + scale .96 → 1." },
+      { "name": "hairline", "value": "150ms", "purpose": "Переходы границ и цвета текста контролов." }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Nav Tab",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Вкладка-папка навигации; активная — манильская бумага.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-tab\" href=\"#\">ПЕРСОНАЖИ</a><a class=\"ds-tab ds-tab-active\" href=\"#\">ИГРЫ</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; } .ds-tab { font-family: Oswald, 'Arial Narrow', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: 8px 18px 7px; border: 1px solid #2a2e37; border-bottom: none; border-radius: 7px 7px 0 0; background: #1d2027; color: #98a0ab; text-decoration: none; transition: color .15s; } .ds-tab:hover { color: #e4e1d8; } .ds-tab-active { background: #d8c9a3; border-color: #d8c9a3; color: #1a1712; }"
+    },
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Служебная кнопка на стали; hover подсвечивает штемпельной границей.",
+      "html": "<button class=\"ds-btn\">Сбросить</button>",
+      "css": ".ds-btn { background: #1d2027; border: 1px solid #2a2e37; color: #e4e1d8; padding: 8px 15px; border-radius: 3px; font: 12px 'IBM Plex Mono', Consolas, monospace; letter-spacing: .08em; cursor: pointer; transition: border-color .15s, color .15s; } .ds-btn:hover { border-color: #d0453a; color: #fff; } .ds-btn:active { transform: translateY(1px); } .ds-btn:focus-visible { outline: 2px dashed #d0453a; outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Поиск по уликам; тёмный inset, красный caret и фокус-граница.",
+      "html": "<input class=\"ds-input\" type=\"text\" placeholder=\"Поиск персонажа…\">",
+      "css": ".ds-input { background: #101216; border: 1px solid #2a2e37; color: #e4e1d8; padding: 8px 12px; border-radius: 3px; font: 13px 'IBM Plex Mono', Consolas, monospace; width: 220px; outline: none; caret-color: #d0453a; transition: border-color .15s; } .ds-input::placeholder { color: #98a0ab; } .ds-input:focus { border-color: #b5342c; }"
+    },
+    {
+      "name": "Evidence Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Карточка-улика: тёмный слайд, фото с внутренней белой рамкой, имя в две строки.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-ph\">ДВ</div><span class=\"ds-card-nm\">Джилл Валентайн</span></div>",
+      "css": ".ds-card { width: 66px; display: flex; flex-direction: column; align-items: center; gap: 3px; background: #181c23; border: 1px solid #333947; border-radius: 2px; padding: 3px 2px 2px; cursor: grab; transition: border-color .12s, transform .12s; } .ds-card:hover { border-color: #d0453a; transform: translateY(-2px); } .ds-card-ph { width: 58px; height: 58px; background: #0a0c0f; outline: 2px solid #454b58; outline-offset: -4px; border-radius: 1px; display: flex; align-items: center; justify-content: center; color: #565e69; font-family: Oswald, sans-serif; font-size: 17px; font-weight: 600; } .ds-card-nm { font: 10px/1.2 'IBM Plex Mono', Consolas, monospace; color: #e4e1d8; text-align: center; }"
+    },
+    {
+      "name": "Chip Stamp",
+      "kind": "chip",
+      "refersTo": "chip-stamp",
+      "description": "Штамп-чип метаданных в досье: контур 1.5px, mono, без заливки.",
+      "html": "<span class=\"ds-chip\">RE2</span><span class=\"ds-chip\">RE4</span>",
+      "css": ".ds-chip { display: inline-block; margin: 0 5px 5px 0; padding: 2px 8px 1px; background: transparent; border: 1.5px solid #6d5f42; border-radius: 2px; font: 11px 'IBM Plex Mono', Consolas, monospace; letter-spacing: .03em; color: #4a4132; }"
+    },
+    {
+      "name": "Griff Plate",
+      "kind": "custom",
+      "refersTo": "griff-plate",
+      "description": "Плашка грифа лотка: штемпельные чернила, буква Oswald 700, машинная подпись.",
+      "html": "<div class=\"ds-griff\" style=\"background:#c2453a\"><b>S</b><small>ГРИФ</small></div>",
+      "css": ".ds-griff { width: 84px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; color: #14100c; border-right: 1px solid rgba(0,0,0,.35); box-shadow: inset 0 -2px 5px rgba(0,0,0,.28), inset 0 2px 3px rgba(255,255,255,.25); } .ds-griff b { font-family: Oswald, sans-serif; font-size: 36px; font-weight: 700; line-height: 1; } .ds-griff small { font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 8px; letter-spacing: .22em; text-indent: .22em; text-transform: uppercase; opacity: .72; }"
+    },
+    {
+      "name": "Classified Stamp",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "Красное клеймо КЛАССИФИЦИРОВАНО: поворот −4°, caps с широким tracking.",
+      "html": "<span class=\"ds-stamp\">Классифицировано</span>",
+      "css": ".ds-stamp { font-family: Oswald, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .3em; text-indent: .3em; text-transform: uppercase; color: #d0453a; border: 2px solid #b5342c; border-radius: 2px; padding: 4px 10px 3px; transform: rotate(-4deg); opacity: .92; user-select: none; display: inline-block; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Досье R.P.D.",
+    "overview": "Тир-лист как следственное табло отдела полиции Раккун-Сити. Стальной стол несёт шесть лотков-грифов S–F с утопленными зонами; персонажи — улики-слайды, которые подшиваются в дело перетаскиванием. Единственная светлая поверхность — манильский банк «Неразобранные улики» и раскрывающееся досье лайтбокса. Два голоса типографики: Oswald-капс для грифов и заголовков дела, IBM Plex Mono для машинописи. Единственный акцент — красная штемпельная краска: клеймо КЛАССИФИЦИРОВАНО, штамп «Пометить» при перетаскивании, красные маркеры списков. Поверхность десктоп-онли: страница живёт в браузер-окне, снимаемом в стрим, где контраст и размеры — жёсткий пол.",
+    "keyCharacteristics": [
+      "Тёмный стальной ground; светлое пятно только на манильской бумаге банка и досье",
+      "Два типографических голоса: Oswald-капс и IBM Plex Mono, шрифты самолокализованы",
+      "Штампы как язык состояний: пустой лоток, dragover, размещение",
+      "Стандартные веб-контролы; мир выражен типографикой, палитрой, плотностью и штампами",
+      "Десктоп-онли, без адаптивных брейкпоинтов"
+    ],
+    "rules": [
+      { "name": "The Stamp Rule", "body": "Состояния выражаются штампами, а не подсветкой: пустой лоток несёт блеклое клеймо «Лоток пуст», dragover — красный штамп «Пометить», размещение карточки — анимация прижатия штампа.", "section": "components" }
+    ],
+    "dos": [
+      "Do: новые состояния выражать клеймом (граница + поворот + caps-tracking), контраст текста держать ≥4.5:1."
+    ],
+    "donts": [
+      "Don't: серый вторичный текст на манильской бумаге — только тёплые коричневые из чернил.",
+      "Don't: добавлять мобильные брейкпоинты — поверхность десктоп-онли по решению продукта.",
+      "Don't: заменять штампы-состояния на цветные подсветки или свечения.",
+      "Don't: подключать шрифты с внешних хостингов — только самолокализованные woff2."
+    ]
+  }
+}

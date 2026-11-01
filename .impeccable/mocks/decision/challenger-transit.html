@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --enamel:#0e1c3a; --enamel2:#0a1530; --porcelain:#f4f1e8; --ink:#111a2e;
+  --grey:#8fa2c4; --s:#e0413e; --a:#e8a53a; --b:#3f9e5a; --c:#3a8fd8; --d:#7a6fd8; --f:#8a93a8;
+}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--enamel);color:var(--porcelain);
+  font-family:"PT Mono",monospace;padding:18px 22px;
+  background-image:linear-gradient(180deg,rgba(255,255,255,.02),transparent 140px)}
+.disp{font-family:Rubik,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.tabs{display:flex;gap:6px}
+.tabs a{font-family:Rubik,sans-serif;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 16px;border-radius:14px;text-decoration:none;color:var(--porcelain);border:1.5px solid var(--grey)}
+.tabs a.on{background:var(--porcelain);color:var(--ink);border-color:var(--porcelain)}
+h1{font-size:22px;font-weight:700}
+h1 em{font-style:normal;color:var(--s)}
+.interchange{width:30px;height:30px;border-radius:50%;border:3px solid var(--porcelain);
+  display:flex;align-items:center;justify-content:center;font-family:Rubik,sans-serif;font-weight:700;font-size:13px}
+.ctrls{margin-left:auto;display:flex;gap:8px}
+.ctrls input{width:200px;background:var(--enamel2);border:1.5px solid var(--grey);color:var(--porcelain);
+  font:13px "PT Mono",monospace;padding:7px 11px;border-radius:14px}
+.ctrls input::placeholder{color:var(--grey)}
+.ctrls button{background:transparent;border:1.5px solid var(--grey);color:var(--porcelain);
+  font:12px "PT Mono",monospace;letter-spacing:.08em;padding:7px 14px;border-radius:14px;cursor:pointer}
+.board{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:16px;height:776px}
+.lines{display:flex;flex-direction:column;gap:10px;min-width:0}
+.line{flex:1;display:flex;align-items:stretch;min-height:0}
+.rail{flex:0 0 30px;border-radius:15px;position:relative;display:flex;align-items:center;justify-content:center}
+.rail b{width:34px;height:34px;border-radius:50%;background:var(--porcelain);border:4px solid;
+  display:flex;align-items:center;justify-content:center;font-family:Rubik,sans-serif;font-size:16px;font-weight:700}
+.stations{flex:1;min-width:0;margin:8px 10px;display:flex;gap:8px;align-items:center;overflow:hidden}
+.station{flex:0 0 auto;width:66px}
+.tile{width:62px;height:56px;background:var(--porcelain);border-radius:6px;border-bottom:3px solid rgba(0,0,0,.35);
+  display:flex;align-items:center;justify-content:center;color:var(--ink);font-family:Rubik,sans-serif;font-size:17px;font-weight:600}
+.station span{display:block;font-size:9.5px;line-height:1.2;color:var(--porcelain);text-align:center;margin-top:3px}
+.terminus{flex:0 0 22px;align-self:center;border-left:3px solid var(--porcelain);border-top:3px solid var(--porcelain);
+  border-bottom:3px solid var(--porcelain);border-radius:4px 0 0 4px;width:16px;height:60%;opacity:.5}
+.aside{border:2px solid var(--porcelain);border-radius:16px;display:flex;flex-direction:column;overflow:hidden}
+.ahead{display:flex;justify-content:space-between;align-items:center;padding:11px 16px;border-bottom:2px solid var(--porcelain)}
+.ahead b{font-family:Rubik,sans-serif;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.ahead small{font-size:11px;color:var(--grey)}
+.pool{flex:1;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;padding:13px;overflow:hidden}
+.pool .tile{background:transparent;border:2px solid var(--porcelain);color:var(--porcelain);border-radius:8px}
+.pool .station span{color:var(--grey)}
+.foot{border-top:2px dashed var(--grey);margin:0 14px;padding:9px 2px;font-size:10.5px;line-height:1.5;color:var(--grey)}
+</style>
+</head>
+<body>
+<header>
+  <nav class="tabs"><a class="on" href="#">Персонажи</a><a href="#">Игры</a></nav>
+  <h1 class="disp">Resident <em>Evil</em> — тир-лист</h1>
+  <div class="interchange">RE</div>
+  <div class="ctrls">
+    <input type="text" placeholder="Поиск персонажа…">
+    <button type="button">Сбросить</button>
+  </div>
+</header>
+<div class="board">
+  <div class="lines">
+    <div class="line">
+      <div class="rail" style="background:var(--s)"><b style="border-color:var(--s);color:var(--s)">S</b></div>
+      <div class="stations">
+        <div class="station"><div class="tile">ДВ</div><span>Джилл Валентайн</span></div>
+        <div class="station"><div class="tile">ЛК</div><span>Леон Кеннеди</span></div>
+        <div class="station"><div class="tile">АВ</div><span>Ада Вонг</span></div>
+        <div class="station"><div class="tile">КР</div><span>Крис Редфилд</span></div>
+        <div class="terminus"></div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="rail" style="background:var(--a)"><b style="border-color:var(--a);color:var(--a)">A</b></div>
+      <div class="stations">
+        <div class="station"><div class="tile">АВ</div><span>Альберт Вескер</span></div>
+        <div class="station"><div class="tile">КР</div><span>Клэр Редфилд</span></div>
+        <div class="station"><div class="tile">РЧ</div><span>Ребекка Чемберс</span></div>
+        <div class="terminus"></div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="rail" style="background:var(--b)"><b style="border-color:var(--b);color:var(--b)">B</b></div>
+      <div class="stations">
+        <div class="station"><div class="tile">ББ</div><span>Барри Бёртон</span></div>
+        <div class="station"><div class="tile">ХН</div><span>Ханк</span></div>
+        <div class="station"><div class="tile">КО</div><span>Карлос Оливейра</span></div>
+        <div class="terminus"></div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="rail" style="background:var(--c)"><b style="border-color:var(--c);color:var(--c)">C</b></div>
+      <div class="stations">
+        <div class="station"><div class="tile">ИУ</div><span>Итан Уинтерс</span></div>
+        <div class="station"><div class="tile">ШБ</div><span>Шерри Биркин</span></div>
+        <div class="terminus"></div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="rail" style="background:var(--d)"><b style="border-color:var(--d);color:var(--d)">D</b></div>
+      <div class="stations">
+        <div class="station"><div class="tile">МБ</div><span>Мойра Бёртон</span></div>
+        <div class="station"><div class="tile">БК</div><span>Билли Коэн</span></div>
+        <div class="terminus"></div>
+      </div>
+    </div>
+    <div class="line">
+      <div class="rail" style="background:var(--f)"><b style="border-color:var(--f);color:var(--f)">F</b></div>
+      <div class="stations"><div class="terminus"></div></div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="ahead"><b>Депо</b><small>34 шт.</small></div>
+    <div class="pool">
+      <div class="station"><div class="tile">ДМ</div><span>Джеймс Маркус</span></div>
+      <div class="station"><div class="tile">ЛТ</div><span>Лиза Тревор</span></div>
+      <div class="station"><div class="tile">ЭВ</div><span>Эвелина</span></div>
+      <div class="station"><div class="tile">ДБ</div><span>Джек Бейкер</span></div>
+      <div class="station"><div class="tile">МУ</div><span>Мия Уинтерс</span></div>
+      <div class="station"><div class="tile">ДБ</div><span>Донна Бенеviento</span></div>
+      <div class="station"><div class="tile">КР</div><span>Карла Радамес</span></div>
+      <div class="station"><div class="tile">АВ</div><span>Алекс Вескер</span></div>
+      <div class="station"><div class="tile">КЧ</div><span>Карл Хайзенберг</span></div>
+      <div class="station"><div class="tile">ДД</div><span>Димитреску</span></div>
+      <div class="station"><div class="tile">БМ</div><span>Мендес</span></div>
+      <div class="station"><div class="tile">ГЭ</div><span>Грейс Эшкрофт</span></div>
+    </div>
+    <div class="foot">Перетащи состав на линию. Клик — карточка станции. Названия линий редактируются. Всё сохраняется автоматически.</div>
+  </aside>
+</div>
+</body>
+</html>

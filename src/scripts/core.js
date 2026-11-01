@@ -89,7 +89,9 @@ export function initTierList(cfg) {
     const b = document.createElement("button");
     b.type = "button";
     b.className = "row-btn " + (dir < 0 ? "row-btn-prev" : "row-btn-next");
-    b.textContent = dir < 0 ? "‹" : "›";
+    b.innerHTML = dir < 0
+      ? '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.5 2L4.5 7l5 5"/></svg>'
+      : '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 2l5 5-5 5"/></svg>';
     b.tabIndex = -1;
     b.addEventListener("click", () => {
       const zone = b.parentElement.querySelector(".dropzone");
@@ -191,6 +193,9 @@ export function initTierList(cfg) {
     if (!dest) return;
     insertAt(dest, e.clientX, e.clientY, cardEl);
     cardEl.classList.remove("dragging");
+    cardEl.classList.remove("stamped");
+    void cardEl.offsetWidth;
+    cardEl.classList.add("stamped");
     if (src) syncFromDOM(src);
     syncFromDOM(dest);
     applyFilter();
@@ -209,12 +214,29 @@ export function initTierList(cfg) {
 
   window.addEventListener("resize", updateAllRowBtns);
 
-  document.getElementById("reset").addEventListener("click", () => {
-    if (!confirm(cfg.resetMessage)) return;
+  const resetDialog = document.getElementById("reset-dialog");
+
+  function doReset() {
     tiers = DEFAULT_TIERS.map(t => ({ ...t, label: t.key, items: [] }));
     pool = cfg.items.map(i => i.id);
     render();
     saveState();
+  }
+
+  document.getElementById("reset").addEventListener("click", () => {
+    document.getElementById("rd-text").textContent = cfg.resetMessage;
+    resetDialog.showModal();
+  });
+
+  document.getElementById("rd-confirm").addEventListener("click", () => resetDialog.close("confirm"));
+  document.getElementById("rd-cancel").addEventListener("click", () => resetDialog.close("cancel"));
+
+  resetDialog.addEventListener("click", e => {
+    if (e.target === resetDialog) resetDialog.close("cancel");
+  });
+
+  resetDialog.addEventListener("close", () => {
+    if (resetDialog.returnValue === "confirm") doReset();
   });
 
   function renderLb() {

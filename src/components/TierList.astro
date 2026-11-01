@@ -7,7 +7,6 @@ const {
   heading,
   searchPlaceholder,
   bankTitle,
-  footer,
   active,
   bodyClass,
 } = Astro.props;
@@ -30,6 +29,7 @@ const BASE = import.meta.env.BASE_URL;
       <a class={active === "games" ? "active" : undefined} href={BASE + "games/"}>Игры</a>
     </nav>
     <h1>RESIDENT <span>EVIL</span> — {heading}</h1>
+    <span class="stamp" aria-hidden="true">Классифицировано</span>
     <input id="search" type="text" placeholder={searchPlaceholder} />
     <button id="reset">Сбросить</button>
   </header>
@@ -42,15 +42,31 @@ const BASE = import.meta.env.BASE_URL;
     </div>
   </div>
 
-  <footer>{footer}</footer>
+  <dialog id="reset-dialog">
+    <div id="rd-card">
+      <span class="stamp" aria-hidden="true">Сброс дела</span>
+      <h2 id="rd-title">Сбросить всё?</h2>
+      <p id="rd-text"></p>
+      <div id="rd-actions">
+        <button id="rd-confirm">Сбросить</button>
+        <button id="rd-cancel">Отмена</button>
+      </div>
+    </div>
+  </dialog>
 
   <div id="lightbox" hidden>
     <div id="lb-card">
-      <button id="lb-close" aria-label="Закрыть">✕</button>
+      <button id="lb-close" aria-label="Закрыть">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12"/></svg>
+      </button>
       <div id="lb-media">
-        <img id="lb-img" alt="" />
-        <button id="lb-prev" aria-label="Предыдущий">‹</button>
-        <button id="lb-next" aria-label="Следующий">›</button>
+        <img id="lb-img" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+        <button id="lb-prev" aria-label="Предыдущий">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9.5 2L4.5 7l5 5"/></svg>
+        </button>
+        <button id="lb-next" aria-label="Следующий">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4.5 2l5 5-5 5"/></svg>
+        </button>
         <span id="lb-pos"></span>
       </div>
       <div id="lb-info">

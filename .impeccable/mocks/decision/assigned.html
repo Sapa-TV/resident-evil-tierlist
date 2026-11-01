@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#15171c; --steel:#1c1f26; --inset:#101216; --line:#2a2e37;
+  --paper:#d8c9a3; --paper-dim:#b3a684; --ink:#1a1712;
+  --stamp:#b5342c; --text:#e4e1d8; --dim:#8a8f98;
+  --s:#c2453a; --a:#c07b2f; --b:#b9a72e; --c:#5d8f45; --d:#3f7d9e; --f:#7a6fae;
+}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--desk);color:var(--text);
+  font-family:"IBM Plex Mono",monospace;padding:18px 22px;
+  background-image:repeating-linear-gradient(0deg,transparent 0 2px,rgba(255,255,255,.008) 2px 4px)}
+.disp{font-family:Oswald,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.tabs{display:flex;gap:3px}
+.tabs a{font-family:Oswald,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+  padding:8px 16px 6px;color:var(--dim);text-decoration:none;background:var(--steel);
+  border:1px solid var(--line);border-bottom:none;border-radius:6px 6px 0 0}
+.tabs a.on{color:var(--ink);background:var(--paper);border-color:var(--paper)}
+.case{flex:1;display:flex;align-items:baseline;gap:12px;min-width:0}
+h1{font-size:24px;font-weight:600}
+h1 em{font-style:normal;color:var(--stamp)}
+.stamp{border:2px solid var(--stamp);color:var(--stamp);font-family:Oswald,sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;
+  padding:3px 10px 2px;transform:rotate(-4deg);opacity:.9;border-radius:2px}
+.ctrls{display:flex;gap:8px}
+.ctrls input{width:200px;background:var(--inset);border:1px solid var(--line);color:var(--text);
+  font:13px "IBM Plex Mono",monospace;padding:7px 11px;border-radius:3px}
+.ctrls input::placeholder{color:var(--dim)}
+.ctrls button{background:var(--steel);border:1px solid var(--line);color:var(--text);
+  font:12px "IBM Plex Mono",monospace;letter-spacing:.08em;padding:7px 14px;border-radius:3px;cursor:pointer}
+.board{display:grid;grid-template-columns:minmax(0,1fr) 388px;gap:16px;height:772px}
+.trays{display:flex;flex-direction:column;gap:9px;min-width:0}
+.row{display:flex;height:118px;border:1px solid var(--line);border-radius:4px;background:var(--steel);overflow:hidden}
+.grip{flex:0 0 10px;background:repeating-linear-gradient(0deg,var(--line) 0 2px,transparent 2px 7px)}
+.plate{flex:0 0 84px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:#14100c}
+.plate b{font-family:Oswald,sans-serif;font-size:38px;font-weight:700;line-height:1}
+.plate i{font-style:normal;font-size:8.5px;letter-spacing:.14em;opacity:.75}
+.tray{flex:1;min-width:0;background:var(--inset);margin:6px 8px 6px 0;border:1px solid #232730;border-radius:3px;
+  display:flex;gap:7px;align-items:center;padding:0 10px;overflow:hidden}
+.card{flex:0 0 auto;width:66px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.ph{width:60px;height:60px;border:1px solid #333947;border-radius:2px;background:#181c23;
+  display:flex;align-items:center;justify-content:center;color:#4d5462;font-family:Oswald,sans-serif;font-size:19px;font-weight:600}
+.card span{font-size:9.5px;line-height:1.15;color:var(--text);text-align:center}
+.arrows{flex:0 0 22px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.arrows b{width:20px;height:20px;border:1px solid var(--line);border-radius:2px;color:var(--dim);
+  font-size:11px;display:flex;align-items:center;justify-content:center}
+.mark{margin-left:auto;align-self:flex-start;flex:0 0 auto;border:1.5px solid #3d443f;color:#5a6b58;
+  font-family:Oswald,sans-serif;font-size:10px;letter-spacing:.2em;padding:2px 7px 1px;transform:rotate(-6deg);
+  text-transform:uppercase;border-radius:2px;align-self:center;margin-right:6px}
+.aside{border:1px solid var(--paper-dim);border-radius:4px;background:var(--paper);color:var(--ink);
+  display:flex;flex-direction:column;overflow:hidden}
+.ahead{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:2px solid var(--ink)}
+.ahead b{font-family:Oswald,sans-serif;font-size:15px;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+.ahead small{font-size:11px;font-weight:600}
+.pool{flex:1;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;padding:12px;overflow:hidden}
+.pool .card{width:62px}
+.pool .ph{width:56px;height:56px;background:#cdbc94;border-color:#a69674;color:#5c5140}
+.pool .card span{color:#2e281d;font-weight:600}
+.note{border-top:1px dashed var(--paper-dim);margin:0 12px;padding:9px 2px;font-size:10.5px;line-height:1.5;color:#4a4132}
+.note b{letter-spacing:.08em}
+</style>
+</head>
+<body>
+<header>
+  <nav class="tabs"><a class="on" href="#">Персонажи</a><a href="#">Игры</a></nav>
+  <div class="case">
+    <h1 class="disp">Дело: Resident <em>Evil</em> — тир-лист</h1>
+    <span class="stamp">Классифицировано</span>
+  </div>
+  <div class="ctrls">
+    <input type="text" placeholder="Поиск персонажа…">
+    <button type="button">Сбросить</button>
+  </div>
+</header>
+<div class="board">
+  <div class="trays">
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--s)"><b>S</b><i>ГРИФ</i></div>
+      <div class="tray">
+        <div class="card"><div class="ph">ДВ</div><span>Джилл Валентайн</span></div>
+        <div class="card"><div class="ph">ЛК</div><span>Леон Кеннеди</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Ада Вонг</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Альберт Вескер</span></div>
+        <div class="mark">Пометить</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--a)"><b>A</b><i>ГРИФ</i></div>
+      <div class="tray">
+        <div class="card"><div class="ph">КР</div><span>Клэр Редфилд</span></div>
+        <div class="card"><div class="ph">КР</div><span>Крис Редфилд</span></div>
+        <div class="card"><div class="ph">РЧ</div><span>Ребекка Чемберс</span></div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--b)"><b>B</b><i>ГРИФ</i></div>
+      <div class="tray">
+        <div class="card"><div class="ph">ББ</div><span>Барри Бёртон</span></div>
+        <div class="card"><div class="ph">ХН</div><span>Ханк</span></div>
+        <div class="card"><div class="ph">КО</div><span>Карлос Оливейра</span></div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--c)"><b>C</b><i>ГРИФ</i></div>
+      <div class="tray">
+        <div class="card"><div class="ph">ИУ</div><span>Итан Уинтерс</span></div>
+        <div class="card"><div class="ph">ШБ</div><span>Шерри Биркин</span></div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--d)"><b>D</b><i>ГРИФ</i></div>
+      <div class="tray">
+        <div class="card"><div class="ph">МБ</div><span>Мойра Бёртон</span></div>
+        <div class="card"><div class="ph">БК</div><span>Билли Коэн</span></div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row"><div class="grip"></div>
+      <div class="plate" style="background:var(--f)"><b>F</b><i>ГРИФ</i></div>
+      <div class="tray"><div class="mark">Лоток пуст</div></div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="ahead"><b>Неразобранные улики</b><small>34 шт.</small></div>
+    <div class="pool">
+      <div class="card"><div class="ph">ДМ</div><span>Джеймс Маркус</span></div>
+      <div class="card"><div class="ph">ЛТ</div><span>Лиза Тревор</span></div>
+      <div class="card"><div class="ph">ЭВ</div><span>Эвелина</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Джек Бейкер</span></div>
+      <div class="card"><div class="ph">МУ</div><span>Мия Уинтерс</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Донна Бенеviento</span></div>
+      <div class="card"><div class="ph">КР</div><span>Карла Радамес</span></div>
+      <div class="card"><div class="ph">АВ</div><span>Алекс Вескер</span></div>
+      <div class="card"><div class="ph">КЧ</div><span>Карл Хайзенберг</span></div>
+      <div class="card"><div class="ph">ДМ</div><span>Димитреску</span></div>
+      <div class="card"><div class="ph">ММ</div><span>Мендес</span></div>
+      <div class="card"><div class="ph">ГА</div><span>Грейс Эшкрофт</span></div>
+    </div>
+    <div class="note"><b>ПРИМЕЧАНИЕ:</b> перетащи улику в лоток грифа. Клик — Дело №, досье раскрывается. Подписи грифов редактируются. Всё сохраняется автоматически.</div>
+  </aside>
+</div>
+</body>
+</html>

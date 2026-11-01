@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c1e22; --leaf:rgba(22,24,28,.86); --text:#f0f0ec; --dim:#a8a8a0;
+  --s:#e8930c; --a:#f2c500; --b:#5a8f3c; --c:#2a7f8f; --d:#2a4a9e; --f:#8f4a2a;
+  --edge:#0c0d10;
+}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--ink);color:var(--text);
+  font-family:"IBM Plex Sans",sans-serif;padding:0}
+.hard{position:absolute;left:0;right:0;top:0;height:76px;background:var(--edge);display:flex;align-items:center;gap:18px;padding:0 26px}
+.tabs{display:flex;flex-direction:column;gap:2px}
+.tabs a{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;
+  padding:4px 14px;color:var(--dim);border:1px solid #3a3d44;background:#22252b}
+.tabs a.on{color:var(--edge);background:var(--text);border-color:var(--text)}
+h1{font-size:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+h1 b{color:var(--s)}
+.ctrls{margin-left:auto;display:flex;gap:8px}
+.ctrls input{width:200px;background:#101114;border:1px solid #3a3d44;color:var(--text);
+  font:13px "PT Mono",monospace;padding:7px 11px}
+.ctrls input::placeholder{color:var(--dim)}
+.ctrls button{background:#22252b;border:1px solid #3a3d44;color:var(--text);
+  font:12px "PT Mono",monospace;letter-spacing:.08em;padding:7px 14px;cursor:pointer}
+.punch{position:absolute;top:26px;left:430px;width:14px;height:14px;border-radius:50%;background:var(--ink);
+  border:1px solid #3a3d44}
+.book{position:absolute;inset:76px 56px 0 0;display:grid;grid-template-columns:minmax(0,1fr) 372px;gap:0}
+.rows{display:flex;flex-direction:column;min-width:0}
+.band{flex:1;display:flex;align-items:stretch;min-height:0;border-bottom:4px solid var(--edge);position:relative}
+.gutter{flex:0 0 92px;display:flex;flex-direction:column;justify-content:center;padding:0 0 0 22px;color:var(--edge)}
+.gutter b{font-size:34px;font-weight:700;line-height:1}
+.gutter i{font-style:normal;font-size:8.5px;letter-spacing:.2em;font-family:"PT Mono",monospace}
+.leaf{flex:1;min-width:0;background:var(--leaf);display:flex;gap:7px;align-items:center;padding:0 12px;overflow:hidden;border-left:3px solid var(--edge)}
+.card{flex:0 0 auto;width:64px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.ph{width:56px;height:56px;background:#26292f;border:1px solid #43474f;
+  display:flex;align-items:center;justify-content:center;color:#8b8f98;font-weight:700;font-size:16px}
+.card span{font-size:9.5px;line-height:1.15;text-align:center;color:var(--text)}
+.hole{margin-left:auto;flex:0 0 26px;align-self:center;width:12px;height:12px;border-radius:50%;
+  background:var(--edge);border:1px solid #3a3d44;margin-right:8px}
+.aside{background:var(--edge);border-left:4px solid var(--edge)}
+.ahead{display:flex;justify-content:space-between;align-items:center;background:var(--text);color:var(--edge);padding:11px 16px}
+.ahead b{font-size:13.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.ahead small{font:11px "PT Mono",monospace}
+.pool{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;padding:13px;overflow:hidden}
+.pool .ph{background:#191b1f}
+.foot{border-top:1px solid #3a3d44;margin:0 14px;padding:9px 2px;font:10.5px/1.5 "PT Mono",monospace;color:var(--dim)}
+.rail{position:absolute;top:76px;right:0;bottom:0;width:56px;display:flex;flex-direction:column;gap:3px;padding-top:4px}
+.rail span{writing-mode:vertical-rl;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  padding:16px 0;display:flex;align-items:center;justify-content:center;color:var(--dim);background:#22252b;border-left:3px solid transparent}
+.rail .on{background:var(--s);color:var(--edge);flex:1}
+</style>
+</head>
+<body>
+<div class="hard">
+  <nav class="tabs"><a class="on" href="#">Персонажи</a><a href="#">Игры</a></nav>
+  <h1>Resident <b>Evil</b> — тир-лист</h1>
+  <div class="punch"></div>
+  <div class="ctrls">
+    <input type="text" placeholder="Поиск персонажа…">
+    <button type="button">Сбросить</button>
+  </div>
+</div>
+<div class="book">
+  <div class="rows">
+    <div class="band" style="background:var(--s)">
+      <div class="gutter"><b>S</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf">
+        <div class="card"><div class="ph">ДВ</div><span>Джилл Валентайн</span></div>
+        <div class="card"><div class="ph">ЛК</div><span>Леон Кеннеди</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Ада Вонг</span></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class="band" style="background:var(--a)">
+      <div class="gutter"><b>A</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf">
+        <div class="card"><div class="ph">КР</div><span>Клэр Редфилд</span></div>
+        <div class="card"><div class="ph">КР</div><span>Крис Редфилд</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Альберт Вескер</span></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class="band" style="background:var(--b)">
+      <div class="gutter"><b>B</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf">
+        <div class="card"><div class="ph">РЧ</div><span>Ребекка Чемберс</span></div>
+        <div class="card"><div class="ph">ББ</div><span>Барри Бёртон</span></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class="band" style="background:var(--c)">
+      <div class="gutter"><b>C</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf">
+        <div class="card"><div class="ph">ХН</div><span>Ханк</span></div>
+        <div class="card"><div class="ph">КО</div><span>Карлос Оливейра</span></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class="band" style="background:var(--d)">
+      <div class="gutter"><b>D</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf">
+        <div class="card"><div class="ph">ИУ</div><span>Итан Уинтерс</span></div>
+        <div class="card"><div class="ph">ШБ</div><span>Шерри Биркин</span></div>
+        <div class="hole"></div>
+      </div>
+    </div>
+    <div class="band" style="background:var(--f)">
+      <div class="gutter"><b>F</b><i>РАЗДЕЛ</i></div>
+      <div class="leaf"><div class="hole"></div></div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="ahead"><b>Вкладыш</b><small>34 шт.</small></div>
+    <div class="pool">
+      <div class="card"><div class="ph">МБ</div><span>Мойра Бёртон</span></div>
+      <div class="card"><div class="ph">БК</div><span>Билли Коэн</span></div>
+      <div class="card"><div class="ph">ДМ</div><span>Джеймс Маркус</span></div>
+      <div class="card"><div class="ph">ЛТ</div><span>Лиза Тревор</span></div>
+      <div class="card"><div class="ph">ЭВ</div><span>Эвелина</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Джек Бейкер</span></div>
+      <div class="card"><div class="ph">МУ</div><span>Мия Уинтерс</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Донна Бенеviento</span></div>
+      <div class="card"><div class="ph">КР</div><span>Карла Радамес</span></div>
+      <div class="card"><div class="ph">АВ</div><span>Алекс Вескер</span></div>
+      <div class="card"><div class="ph">КЧ</div><span>Карл Хайзенберг</span></div>
+      <div class="card"><div class="ph">ДД</div><span>Димитреску</span></div>
+    </div>
+    <div class="foot">Перетащи карточку в раздел. Клик — вкладыш с досье. Подписи разделов редактируются. Всё сохраняется автоматически.</div>
+  </aside>
+</div>
+<nav class="rail">
+  <span class="on">Персонажи</span>
+  <span>Игры</span>
+</nav>
+</body>
+</html>

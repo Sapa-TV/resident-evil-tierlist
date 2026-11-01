@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<style>
+:root{
+  --bg:#101014; --panel:#1c1c22; --line:#2c2c34; --text:#e8e8ec; --dim:#8b8b96;
+  --accent:#d64541;
+  --s:#e05a4e; --a:#e69a3c; --b:#e6d13c; --c:#6fbf4e; --d:#4e9fe6; --f:#9a8be6;
+}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--bg);color:var(--text);
+  font-family:"Segoe UI",system-ui,sans-serif;padding:20px 24px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.site-nav{display:flex;gap:6px}
+.site-nav a{padding:7px 14px;border:1px solid var(--line);border-radius:8px;background:var(--panel);
+  color:var(--dim);text-decoration:none;font-size:13px;font-weight:600}
+.site-nav a.on{border-color:var(--accent);color:#fff;background:#2a2126}
+h1{font-size:21px;letter-spacing:.4px}
+h1 span{color:var(--accent)}
+.ctrls{margin-left:auto;display:flex;gap:8px}
+.ctrls input{width:220px;background:var(--panel);border:1px solid var(--line);color:var(--text);
+  padding:8px 12px;border-radius:8px;font-size:14px}
+.ctrls input::placeholder{color:var(--dim)}
+.ctrls button{background:var(--panel);border:1px solid var(--line);color:var(--text);
+  padding:8px 14px;border-radius:8px;font-size:14px;cursor:pointer}
+.board{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:14px;height:780px}
+.tiers{display:flex;flex-direction:column;gap:9px;min-width:0}
+.row{flex:1;display:flex;border:1px solid var(--line);border-radius:10px;background:var(--panel);overflow:hidden}
+.label{flex:0 0 56px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#111}
+.dropzone{flex:1;min-width:0;display:flex;gap:7px;align-items:center;padding:0 12px;background:#17171c;overflow:hidden}
+.card{flex:0 0 auto;width:68px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.ph{width:60px;height:60px;background:#232329;border:1px solid var(--line);border-radius:7px;
+  display:flex;align-items:center;justify-content:center;color:#565b66;font-size:16px;font-weight:700}
+.card span{font-size:9.5px;line-height:1.2;text-align:center;color:var(--text)}
+.arrows{flex:0 0 24px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.arrows b{width:20px;height:20px;border-radius:5px;background:var(--panel);border:1px solid var(--line);
+  color:var(--dim);font-size:11px;display:flex;align-items:center;justify-content:center}
+.count{margin-left:auto;align-self:center;font-size:11px;color:var(--dim);margin-right:8px}
+.aside{border:1px solid var(--line);border-radius:10px;background:var(--panel);display:flex;flex-direction:column;overflow:hidden}
+.phead{display:flex;justify-content:space-between;align-items:center;padding:11px 15px;background:#26262e}
+.phead b{font-size:14px}
+.phead small{color:var(--dim);font-size:12px}
+.pool{flex:1;display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;padding:12px;background:#1a1a20;overflow:hidden}
+.foot{margin-top:12px;color:var(--dim);font-size:12.5px}
+</style>
+</head>
+<body>
+<header>
+  <nav class="site-nav"><a class="on" href="#">Персонажи</a><a href="#">Игры</a></nav>
+  <h1>RESIDENT <span>EVIL</span> — ТИР-ЛИСТ</h1>
+  <div class="ctrls">
+    <input type="text" placeholder="Поиск персонажа…">
+    <button type="button">Сбросить</button>
+  </div>
+</header>
+<div class="board">
+  <div class="tiers">
+    <div class="row">
+      <div class="label" style="background:var(--s)">S</div>
+      <div class="dropzone">
+        <div class="card"><div class="ph">ДВ</div><span>Джилл Валентайн</span></div>
+        <div class="card"><div class="ph">ЛК</div><span>Леон Кеннеди</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Ада Вонг</span></div>
+        <div class="card"><div class="ph">КР</div><span>Крис Редфилд</span></div>
+        <div class="count">4</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row">
+      <div class="label" style="background:var(--a)">A</div>
+      <div class="dropzone">
+        <div class="card"><div class="ph">КР</div><span>Клэр Редфилд</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Альберт Вескер</span></div>
+        <div class="card"><div class="ph">РЧ</div><span>Ребекка Чемберс</span></div>
+        <div class="count">3</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row">
+      <div class="label" style="background:var(--b)">B</div>
+      <div class="dropzone">
+        <div class="card"><div class="ph">ББ</div><span>Барри Бёртон</span></div>
+        <div class="card"><div class="ph">ХН</div><span>Ханк</span></div>
+        <div class="count">2</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row">
+      <div class="label" style="background:var(--c)">C</div>
+      <div class="dropzone">
+        <div class="card"><div class="ph">КО</div><span>Карлос Оливейра</span></div>
+        <div class="card"><div class="ph">ИУ</div><span>Итан Уинтерс</span></div>
+        <div class="count">2</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row">
+      <div class="label" style="background:var(--d)">D</div>
+      <div class="dropzone">
+        <div class="card"><div class="ph">ШБ</div><span>Шерри Биркин</span></div>
+        <div class="card"><div class="ph">МБ</div><span>Мойра Бёртон</span></div>
+        <div class="count">2</div>
+      </div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+    <div class="row">
+      <div class="label" style="background:var(--f)">F</div>
+      <div class="dropzone"></div>
+      <div class="arrows"><b>‹</b><b>›</b></div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="phead"><b>Банк персонажей</b><small>34 шт.</small></div>
+    <div class="pool">
+      <div class="card"><div class="ph">БК</div><span>Билли Коэн</span></div>
+      <div class="card"><div class="ph">ДМ</div><span>Джеймс Маркус</span></div>
+      <div class="card"><div class="ph">ЛТ</div><span>Лиза Тревор</span></div>
+      <div class="card"><div class="ph">ЭВ</div><span>Эвелина</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Джек Бейкер</span></div>
+      <div class="card"><div class="ph">МУ</div><span>Мия Уинтерс</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Донна Бенеviento</span></div>
+      <div class="card"><div class="ph">КР</div><span>Карла Радамес</span></div>
+      <div class="card"><div class="ph">АВ</div><span>Алекс Вескер</span></div>
+      <div class="card"><div class="ph">КЧ</div><span>Карл Хайзенберг</span></div>
+      <div class="card"><div class="ph">ДД</div><span>Димитреску</span></div>
+      <div class="card"><div class="ph">БМ</div><span>Мендес</span></div>
+    </div>
+  </aside>
+</div>
+<footer class="foot">Перетаскивай карточки мышью. Клик по карточке — увеличенная картинка. Подписи линий редактируются. Всё сохраняется автоматически.</footer>
+</body>
+</html>

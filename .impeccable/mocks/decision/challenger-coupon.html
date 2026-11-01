@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=PT+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#b7a888; --paper:#f2ead8; --paper2:#e9dfc8; --navy:#1f2a44; --navy-dim:#39456a;
+  --carbon:#5a4a7a; --red:#b5342c; --ink:#2a2417; --dim:#6d6450;
+}
+*{box-sizing:border-box;margin:0}
+body{width:1440px;height:900px;overflow:hidden;background:var(--desk);color:var(--ink);
+  font-family:"PT Mono",monospace;padding:20px 22px;
+  background-image:radial-gradient(rgba(0,0,0,.06) 1px,transparent 1px);background-size:5px 5px}
+.disp{font-family:Oswald,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+header{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.tabs{display:flex}
+.tabs a{font-family:Oswald,sans-serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;
+  padding:8px 16px;text-decoration:none;color:var(--navy);background:var(--paper);
+  border:1px solid var(--navy);border-right:none}
+.tabs a:last-child{border-right:1px solid var(--navy)}
+.tabs a.on{background:var(--navy);color:var(--paper)}
+h1{font-size:23px;color:var(--navy)}
+h1 em{font-style:normal;color:var(--red)}
+.void{border:2px solid var(--red);color:var(--red);font-family:Oswald,sans-serif;font-size:11px;
+  letter-spacing:.3em;padding:3px 10px 2px;transform:rotate(-5deg);border-radius:2px}
+.ctrls{margin-left:auto;display:flex;gap:8px}
+.ctrls input{width:200px;background:#fff;border:1px solid var(--navy);color:var(--ink);
+  font:13px "PT Mono",monospace;padding:7px 11px}
+.ctrls input::placeholder{color:var(--dim)}
+.ctrls button{background:var(--navy);border:1px solid var(--navy);color:var(--paper);
+  font:12px "PT Mono",monospace;letter-spacing:.08em;padding:7px 14px;cursor:pointer}
+.board{display:grid;grid-template-columns:minmax(0,1fr) 384px;gap:16px;height:766px}
+.stubs{display:flex;flex-direction:column;gap:10px;min-width:0}
+.coupon{flex:1;display:flex;border:1px solid var(--navy);background:var(--paper);overflow:hidden;
+  box-shadow:2px 2px 0 rgba(31,42,68,.35)}
+.perf{flex:0 0 12px;border-right:1px dashed var(--navy-dim);
+  background:radial-gradient(circle at 0 6px,transparent 3px,var(--desk) 3.5px) repeat-y;background-size:12px 14px}
+.head{flex:0 0 108px;background:var(--navy);color:var(--paper);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:2px}
+.head b{font-family:Oswald,sans-serif;font-size:40px;font-weight:600;line-height:1}
+.head i{font-style:normal;font-size:8.5px;letter-spacing:.2em;color:#9fb0d8}
+.zone{flex:1;min-width:0;display:flex;gap:8px;align-items:center;padding:0 12px;background:#fbf6ea;overflow:hidden}
+.card{flex:0 0 auto;width:66px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.ph{width:58px;height:58px;background:var(--paper2);border:1px solid var(--dim);
+  display:flex;align-items:center;justify-content:center;color:var(--carbon);font-family:Oswald,sans-serif;font-size:18px;font-weight:600}
+.card span{font-size:9.5px;line-height:1.15;text-align:center;color:var(--ink)}
+.seq{flex:0 0 64px;border-left:1px dashed var(--navy-dim);display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:4px;font-size:9px;color:var(--dim);text-align:center}
+.seq b{font-size:16px;color:var(--carbon);font-family:"PT Mono",monospace}
+.gas{align-self:center;margin:0 10px;border:1.5px solid var(--red);color:var(--red);
+  font-family:Oswald,sans-serif;font-size:10px;letter-spacing:.22em;padding:2px 8px 1px;
+  transform:rotate(-7deg);text-transform:uppercase;border-radius:2px}
+.aside{border:1px solid var(--navy);background:var(--paper);display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:2px 2px 0 rgba(31,42,68,.35)}
+.ahead{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:var(--paper);padding:10px 14px}
+.ahead b{font-family:Oswald,sans-serif;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.ahead small{font-size:11px;color:#9fb0d8}
+.pool{flex:1;display:flex;flex-wrap:wrap;gap:9px;align-content:flex-start;padding:12px;background:#fbf6ea;overflow:hidden}
+.pool .ph{background:#fff}
+.foot{border-top:1px dashed var(--navy-dim);margin:0 12px;padding:9px 2px;font-size:10.5px;line-height:1.5;color:var(--dim)}
+.foot b{color:var(--navy)}
+</style>
+</head>
+<body>
+<header>
+  <nav class="tabs"><a class="on" href="#">Персонажи</a><a href="#">Игры</a></nav>
+  <h1 class="disp">Resident <em>Evil</em> — тир-лист</h1>
+  <span class="void">Серия 1996–2026</span>
+  <div class="ctrls">
+    <input type="text" placeholder="Поиск персонажа…">
+    <button type="button">Сбросить</button>
+  </div>
+</header>
+<div class="board">
+  <div class="stubs">
+    <div class="coupon"><div class="perf"></div>
+      <div class="head" style="background:var(--red)"><b>S</b><i>КУПОН ТИРА</i></div>
+      <div class="zone">
+        <div class="card"><div class="ph">ДВ</div><span>Джилл Валентайн</span></div>
+        <div class="card"><div class="ph">ЛК</div><span>Леон Кеннеди</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Ада Вонг</span></div>
+      </div>
+      <div class="seq"><b>004</b>из 75</div>
+    </div>
+    <div class="coupon"><div class="perf"></div>
+      <div class="head"><b>A</b><i>КУПОН ТИРА</i></div>
+      <div class="zone">
+        <div class="card"><div class="ph">КР</div><span>Клэр Редфилд</span></div>
+        <div class="card"><div class="ph">КР</div><span>Крис Редфилд</span></div>
+        <div class="card"><div class="ph">АВ</div><span>Альберт Вескер</span></div>
+      </div>
+      <div class="seq"><b>003</b>из 75</div>
+    </div>
+    <div class="coupon"><div class="perf"></div>
+      <div class="head"><b>B</b><i>КУПОН ТИРА</i></div>
+      <div class="zone">
+        <div class="card"><div class="ph">РЧ</div><span>Ребекка Чемберс</span></div>
+        <div class="card"><div class="ph">ББ</div><span>Барри Бёртон</span></div>
+      </div>
+      <div class="seq"><b>002</b>из 75</div>
+    </div>
+    <div class="coupon"><div class="perf"></div>
+      <div class="head"><b>C</b><i>КУПОН ТИРА</i></div>
+      <div class="zone">
+        <div class="card"><div class="ph">ХН</div><span>Ханк</span></div>
+        <div class="card"><div class="ph">КО</div><span>Карлос Оливейра</span></div>
+      </div>
+      <div class="seq"><b>002</b>из 75</div>
+    </div>
+    <div class="coupon"><div class="perf"></div>
+      <div class="head"><b>D</b><i>КУПОН ТИРА</i></div>
+      <div class="zone">
+        <div class="card"><div class="ph">ИУ</div><span>Итан Уинтерс</span></div>
+        <div class="card"><div class="ph">ШБ</div><span>Шерри Биркин</span></div>
+      </div>
+      <div class="seq"><b>002</b>из 75</div>
+    </div>
+    <div class="coupon"><div class="perf"></div>
+      <div class="head"><b>F</b><i>КУПОН ТИРА</i></div>
+      <div class="zone"><div class="gas">Погашено</div></div>
+      <div class="seq"><b>000</b>из 75</div>
+    </div>
+  </div>
+  <aside class="aside">
+    <div class="ahead"><b>Корешок квитанции</b><small>34 шт.</small></div>
+    <div class="pool">
+      <div class="card"><div class="ph">МБ</div><span>Мойра Бёртон</span></div>
+      <div class="card"><div class="ph">БК</div><span>Билли Коэн</span></div>
+      <div class="card"><div class="ph">ДМ</div><span>Джеймс Маркус</span></div>
+      <div class="card"><div class="ph">ЛТ</div><span>Лиза Тревор</span></div>
+      <div class="card"><div class="ph">ЭВ</div><span>Эвелина</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Джек Бейкер</span></div>
+      <div class="card"><div class="ph">МУ</div><span>Мия Уинтерс</span></div>
+      <div class="card"><div class="ph">ДБ</div><span>Донна Бенеviento</span></div>
+      <div class="card"><div class="ph">КР</div><span>Карла Радамес</span></div>
+      <div class="card"><div class="ph">АВ</div><span>Алекс Вескер</span></div>
+      <div class="card"><div class="ph">КЧ</div><span>Карл Хайзенберг</span></div>
+      <div class="card"><div class="ph">ДД</div><span>Димитреску</span></div>
+    </div>
+    <div class="foot"><b>КОРешок:</b> перетащи купон в серию тира. Клик — расширенная квитанция. Подписи серий редактируются. Всё сохраняется автоматически.</div>
+  </aside>
+</div>
+</body>
+</html>
